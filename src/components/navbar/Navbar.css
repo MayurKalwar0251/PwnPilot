@@ -1,0 +1,267 @@
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar {
+  padding-inline: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.scrolled-navbar {
+  top: 0; /* Move the navbar to the top of the page when scrolled */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 10; /* Ensure dropdown is on top */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(30px); /* Move the dropdown up by 10px initially */
+  transition: transform 0.3s ease-in-out;
+  width: 250px; /* Add width: 100% to make it take the full width of its parent */
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid rgb(253, 192, 0);
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.item:hover .dropdown {
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  top: 20px; /* Adjust the top position to show the dropdown below the item */
+  left: 0; /* Adjust the left position to align with the item */
+}
+
+.item {
+  position: relative; /* Add relative positioning to the item */
+  height: 50%;
+  display: flex;
+  transition: all 2s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.logo {
+  width: 130px;
+  padding-inline-start: 0px;
+  padding-block: 0px;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.item {
+  color: black;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+  color: rgb(253, 192, 0);
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 7px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.btn-ham {
+  display: none;
+  top: 20px;
+  right: 60px;
+}
+
+/* Hamburger Icon Styles */
+.hamburger-button {
+  display: none;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 60px;
+  z-index: 2;
+}
+
+.hamburger-button:hover {
+  color: white;
+}
+
+/* Cancel Button Styles */
+.cancel-button {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.cancel-button:hover {
+  color: white;
+}
+
+/* Media Query for Mobile View */
+/* Media Query for Mobile View */
+@media (max-width: 1200px) {
+  .btn-ham {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 60px;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: start;
+    color: white;
+    position: fixed; /* Change to fixed to prevent overflow */
+    top: 0;
+    right: -300px; /* Initially off-screen */
+    height: 100vh; /* Full height */
+    background-color: rgb(239, 3, 72);
+    z-index: 1;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto; /* Add this to make the menu scrollable */
+    gap: 0px;
+    padding-top: 20px;
+  }
+
+  .btn {
+    height: 30px;
+    padding: 3px;
+  }
+
+  .item {
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    margin-inline: 10px;
+  }
+
+  .item:hover {
+    color: black;
+  }
+
+  .items.open {
+    right: 0; /* Bring it into view */
+  }
+
+  .navbar {
+    flex-direction: row;
+  }
+
+  .hamburger-button {
+    display: block;
+    color: rgb(0, 0, 0);
+    z-index: 100;
+  }
+
+  .cancel-button {
+    display: block;
+    color: white !important;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact h4 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .contact ul li {
+    font-size: 12px;
+    list-style: none;
+    margin-block: 4px;
+  }
+
+  .follow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .follow h4 {
+    font-size: 18px;
+    color: black;
+    margin-block: 20px;
+  }
+
+  .follow ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+  }
+
+  .follow ul li {
+    size: 20px;
+    color: white;
+    margin: 4px;
+  }
+}
