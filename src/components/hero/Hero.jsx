@@ -11,7 +11,7 @@ const Hero = () => {
     <div className="hero-section">
       <div className="left">
         <p className="name">
-          Welcome To <span>TalaKunchi Networks Private Limited</span>
+          Welcome To <span>PWNPilot Networks Private Limited</span>
         </p>
         <h2 className="heading">Cybersecurity Simplified</h2>
         <p className="txt">
