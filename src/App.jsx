@@ -8,6 +8,7 @@ import Row4Elements from "./components/row4elements/Row4Elements";
 import TrustedCyber from "./components/trusted cyber/TrustedCyber";
 import SolutionOffer from "./components/solution offer/SolutionOffer";
 import CyberDetail4 from "./components/cyber detail 4/CyberDetail4";
+import CollaboratingClosely from "./components/collaborating closely pink/CollaboratingClosely";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <TrustedCyber />
         <SolutionOffer />
         <CyberDetail4 />
+        <CollaboratingClosely />
       </div>
     </>
   );

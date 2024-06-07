@@ -65,8 +65,8 @@
     height: 80vh;
     align-items: center;
     gap: 0px;
-    width: 95%;
-    padding-inline: 20px;
+    width: 100%;
+    padding-inline: 0px;
   }
 
   .box {

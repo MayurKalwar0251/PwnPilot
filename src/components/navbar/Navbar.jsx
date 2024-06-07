@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../../assets/Logo.png";
 import "./Navbar.css";
-import { MdOutlineCancel } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import Cancel from "../../assets/multiply.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,7 +92,7 @@ const Navbar = () => {
         <div className={`items ${isOpen ? "open" : ""}`}>
           {isOpen && (
             <button className="cancel-button" onClick={toggleMenu}>
-              <MdOutlineCancel />
+              <img src={Cancel} alt="Cancel img" />
             </button>
           )}
           <div className="item">

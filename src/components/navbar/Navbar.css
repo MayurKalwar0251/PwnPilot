@@ -39,15 +39,20 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .dropdown li {
   padding: 10px;
+  width: 90%;
   cursor: pointer;
 }
 
 .dropdown li:hover {
   background-color: #f0f0f0;
+  color: red;
 }
 
 .item:hover .dropdown {
@@ -69,14 +74,15 @@
 }
 
 .logo {
-  width: 130px;
+  width: 200px;
   padding-inline-start: 0px;
   padding-block: 0px;
+  height: 80px;
 }
 
 .logo img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -171,7 +177,7 @@
     top: 0;
     right: -300px; /* Initially off-screen */
     height: 100vh; /* Full height */
-    background-color: rgb(239, 3, 72);
+    background-color: black;
     z-index: 1;
     transition: right 0.3s ease-in-out;
     overflow-y: auto; /* Add this to make the menu scrollable */
@@ -214,8 +220,10 @@
     display: block;
     color: white !important;
     position: absolute;
-    top: 5px;
+    top: 15px;
     left: 5px;
+    width: 50px;
+    height: 50px;
   }
 
   .container {
@@ -230,25 +238,27 @@
   }
 
   .contact h4 {
-    color: black;
+    color: white;
     font-size: 18px;
     margin-bottom: 20px;
   }
 
   .contact ul li {
     font-size: 12px;
+    color: white;
     list-style: none;
     margin-block: 4px;
   }
 
   .follow {
     display: flex;
+    color: white;
     flex-direction: column;
   }
 
   .follow h4 {
     font-size: 18px;
-    color: black;
+    color: white;
     margin-block: 20px;
   }
 
@@ -263,5 +273,18 @@
     size: 20px;
     color: white;
     margin: 4px;
+  }
+}
+
+@media (max-width: 750px) {
+  .logo {
+    height: 70px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    display: none;
   }
 }
