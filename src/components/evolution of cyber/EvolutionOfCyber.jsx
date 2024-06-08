@@ -59,7 +59,7 @@ const EvolutionOfCyber = () => {
                   className="input"
                   placeholder="Your Message"
                 />
-                <div className="btn">Free Consultancy</div>
+                <div className="form-btn">Free Consultancy</div>
               </div>
             </div>
           </div>

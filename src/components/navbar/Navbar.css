@@ -106,7 +106,7 @@
 }
 
 .btn {
-  background-color: black;
+  background-color: black !important;
   color: white;
   border-radius: 3px;
   display: flex;
@@ -165,7 +165,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding-right: 60px;
+    padding-right: 120px;
   }
 
   .items {
@@ -285,7 +285,6 @@
     font-size: 30px;
     border: none;
     cursor: pointer;
-    right: 20px;
     z-index: 2;
     padding: 0px 10px;
   }
