@@ -10,9 +10,9 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <div className="left">
-        <p className="name">
-          Welcome To <span>PWNPilot Networks Private Limited</span>
-        </p>
+        <span className="name">
+          Welcome To <span>PWNPilot Security Private Limited</span>
+        </span>
         <h2 className="heading">Cybersecurity Simplified</h2>
         <p className="txt">
           Enhance your security posture through strategic cybersecurity

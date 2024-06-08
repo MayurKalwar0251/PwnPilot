@@ -4,7 +4,7 @@ import "./Navbar.css";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import Cancel from "../../assets/multiply.png";
+import Cancel from "../../assets/cancel.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
