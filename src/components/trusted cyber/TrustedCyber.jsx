@@ -1,6 +1,7 @@
 import React from "react";
 import "./trustedcyber.css";
 import backgroundImage from "../../assets/planning-success-bg.png"; // Update the path accordingly
+import MyCustomButton from "../button/CommonButton";
 
 const TrustedCyber = () => {
   return (
@@ -23,7 +24,7 @@ const TrustedCyber = () => {
             </p>
           </div>
           <div className="trusted-right">
-            <div className="trusted-btn">View All Services &gt; </div>
+            <MyCustomButton name={"View All Services"} />
           </div>
         </div>
       </div>

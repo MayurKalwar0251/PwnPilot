@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Cancel from "../../assets/cancel.png";
+import MyCustomButton from "../button/CommonButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,9 +80,11 @@ const Navbar = () => {
 
         {!isOpen && (
           <div className="btn-ham">
-            <div className="btn">
-              <p>Get A Qoute &gt;</p>
-            </div>
+            <MyCustomButton
+              name={"Get A Qoute"}
+              backgroundColor="black"
+              color="white"
+            />
           </div>
         )}
         {!isOpen && (
@@ -164,9 +167,11 @@ const Navbar = () => {
           </div>
 
           {!isOpen && (
-            <div className="btn">
-              <p>Get A Qoute &gt;</p>
-            </div>
+            <MyCustomButton
+              name={"Get A Qoute"}
+              backgroundColor="black"
+              color="white"
+            />
           )}
 
           {isOpen && (

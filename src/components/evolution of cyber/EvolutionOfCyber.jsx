@@ -2,6 +2,7 @@ import React from "react";
 import "./evolution-of-cyber.css";
 import backgroundImage from "../../assets/can-help-background.png"; // Update the path accordingly
 import Icon from "../../assets/cancel.png";
+import MyCustomButton from "../button/CommonButton.jsx";
 
 const EvolutionOfCyber = () => {
   return (
@@ -59,7 +60,7 @@ const EvolutionOfCyber = () => {
                   className="input"
                   placeholder="Your Message"
                 />
-                <div className="form-btn">Free Consultancy</div>
+                <MyCustomButton name={"Free Consultancy"} />
               </div>
             </div>
           </div>

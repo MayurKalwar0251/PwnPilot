@@ -10,9 +10,9 @@ import SolutionOffer from "./components/solution offer/SolutionOffer";
 import CyberDetail4 from "./components/cyber detail 4/CyberDetail4";
 import CollaboratingClosely from "./components/collaborating closely pink/CollaboratingClosely";
 import WhoWeServe from "./components/who we serve/WhoWeServe";
-import CommonButton from "./components/button/CommonButton";
 import LeadershipTeam from "./components/leadership team/LeadershipTeam";
 import EvolutionOfCyber from "./components/evolution of cyber/EvolutionOfCyber";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
         <WhoWeServe />
         <LeadershipTeam />
         <EvolutionOfCyber />
+        <Footer />
       </div>
     </>
   );

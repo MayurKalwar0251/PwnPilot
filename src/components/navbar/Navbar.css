@@ -294,4 +294,7 @@
   .btn {
     display: none;
   }
+  .btn-ham {
+    display: none;
+  }
 }

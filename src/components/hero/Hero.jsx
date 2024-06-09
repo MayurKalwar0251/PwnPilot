@@ -5,6 +5,7 @@ import StartHome from "../../assets/banner-start.svg";
 import { ReactSVG } from "react-svg";
 
 import "./hero.css";
+import MyCustomButton from "../button/CommonButton";
 
 const Hero = () => {
   return (
@@ -18,7 +19,11 @@ const Hero = () => {
           Enhance your security posture through strategic cybersecurity
           planning.
         </p>
-        <div type="button">Read More &nbsp; &gt; </div>
+        <MyCustomButton
+          backgroundColor="black"
+          name={"Read More"}
+          color="white"
+        />
       </div>
       <div className="right">
         <img src={BannerHome} alt="Image" />

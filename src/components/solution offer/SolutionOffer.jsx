@@ -1,5 +1,6 @@
 import React from "react";
 import "./solution.css";
+import MyCustomButton from "../button/CommonButton";
 
 const SolutionOffer = () => {
   return (
@@ -22,7 +23,7 @@ const SolutionOffer = () => {
           protection for our clients' critical infrastructure and sensitive
           data.
         </div>
-        <div className="solution-btn">View All Services &gt; </div>
+        <MyCustomButton name={"View All Services"} />
       </div>
     </div>
   );

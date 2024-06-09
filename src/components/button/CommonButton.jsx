@@ -1,33 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import "./commonbtn.css";
 
-const CommonButton = () => {
-  const [ripple, setRipple] = useState(null);
+function MyCustomButton({ name, backgroundColor = "red", color = "white" }) {
+  const buttonRef = useRef(null);
+  const rippleRef = useRef(null);
+  const [hover, setHover] = useState(false);
 
-  const createRipple = (event) => {
-    const button = event.currentTarget;
-    const circle = document.createElement("span");
-    const diameter = Math.max(button.clientWidth, button.clientHeight);
-    const radius = diameter / 2;
+  function handleMouseEnter() {
+    setHover(true);
+  }
 
-    circle.style.width = circle.style.height = `${diameter}px`;
-    circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
-    circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
-    circle.classList.add("ripple");
+  function handleMouseLeave() {
+    setHover(false);
+  }
 
-    button.appendChild(circle);
-    setRipple(circle);
-  };
+  return (
+    <div
+      ref={buttonRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="myButton"
+      style={{ backgroundColor: backgroundColor, color: color }}
+    >
+      {name}
+      <span
+        ref={rippleRef}
+        className={`rippleEffect ${hover ? "active" : ""}`}
+      ></span>
+    </div>
+  );
+}
 
-  useEffect(() => {
-    if (ripple) {
-      setTimeout(() => {
-        ripple.remove();
-      }, 600);
-    }
-  }, [ripple]);
-
-  return <button onClick={createRipple}>Click me</button>;
-};
-
-export default CommonButton;
+export default MyCustomButton;
