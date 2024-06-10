@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Cancel from "../../assets/cancel.png";
 import MyCustomButton from "../button/CommonButton";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -98,73 +99,89 @@ const Navbar = () => {
               <img src={Cancel} alt="Cancel img" />
             </button>
           )}
-          <div className="item">
-            <p>Home</p>
-          </div>
-          <div
-            className="item"
-            onMouseEnter={() => handleDropdownToggle("Services")}
-            onMouseLeave={handleMouseLeaveItem}
-          >
-            <p>Services</p>
-            {showDropdown && activeDropdown === "Services" && (
-              <div className="dropdown">
-                <ul>
-                  <li>Service 1</li>
-                  <li>Service 2</li>
-                  <li>Service 3</li>
-                </ul>
-              </div>
-            )}
-          </div>
-          <div
-            className="item"
-            onMouseEnter={() => handleDropdownToggle("Products")}
-            onMouseLeave={handleMouseLeaveItem}
-          >
-            <p>Products</p>
-            {showDropdown && activeDropdown === "Products" && (
-              <div className="dropdown">
-                <ul>
-                  <li>Product 1</li>
-                  <li>Product 2</li>
-                  <li>Product 3</li>
-                </ul>
-              </div>
-            )}
-          </div>
-          <div
-            className="item"
-            onMouseEnter={() => handleDropdownToggle("Industries")}
-            onMouseLeave={handleMouseLeaveItem}
-          >
-            <p>Industries</p>
-            {showDropdown && activeDropdown === "Industries" && (
-              <div className="dropdown">
-                <ul>
-                  <li>Industry 1</li>
-                  <li>Industry 2</li>
-                  <li>Industry 3</li>
-                </ul>
-              </div>
-            )}
-          </div>
-          <div
-            className="item"
-            onMouseEnter={() => handleDropdownToggle("Company")}
-            onMouseLeave={handleMouseLeaveItem}
-          >
-            <p>Company</p>
-            {showDropdown && activeDropdown === "Company" && (
-              <div className="dropdown">
-                <ul>
-                  <li>Company Info 1</li>
-                  <li>Company Info 2</li>
-                  <li>Company Info 3</li>
-                </ul>
-              </div>
-            )}
-          </div>
+          <Link to={"/"}>
+            <div className="item">
+              <p>Home</p>
+            </div>
+          </Link>
+          <Link to={"/services"}>
+            <div
+              className="item"
+              onMouseEnter={() => handleDropdownToggle("Services")}
+              onMouseLeave={handleMouseLeaveItem}
+            >
+              <p>Services</p>
+              {showDropdown && activeDropdown === "Services" && (
+                <div className="dropdown">
+                  <ul>
+                    <li>Service 1</li>
+                    <li>Service 2</li>
+                    <li>Service 3</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </Link>
+          <Link to={"/products"}>
+            <div
+              className="item"
+              onMouseEnter={() => handleDropdownToggle("Products")}
+              onMouseLeave={handleMouseLeaveItem}
+            >
+              <p>Products</p>
+              {showDropdown && activeDropdown === "Products" && (
+                <div className="dropdown">
+                  <ul>
+                    <li>Squad1</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </Link>
+
+          <Link to={"/industries"}>
+            <div
+              className="item"
+              onMouseEnter={() => handleDropdownToggle("Industries")}
+              onMouseLeave={handleMouseLeaveItem}
+            >
+              <p>Industries</p>
+              {showDropdown && activeDropdown === "Industries" && (
+                <div className="dropdown">
+                  <ul>
+                    <li>BFSI</li>
+                    <li>Manufacturing</li>
+                    <li>Pharmaceutical</li>
+                    <li>Technology</li>
+                    <li>Government</li>
+                    <li>Education</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </Link>
+
+          <Link to={"/company"}>
+            <div
+              className="item"
+              onMouseEnter={() => handleDropdownToggle("Company")}
+              onMouseLeave={handleMouseLeaveItem}
+            >
+              <p>Company</p>
+              {showDropdown && activeDropdown === "Company" && (
+                <div className="dropdown">
+                  <ul>
+                    <li>About Us</li>
+                    <li>Leadership</li>
+                    <li>Cert-IN</li>
+                    <li>Key-25sec</li>
+                    <li>Careers</li>
+                    <li>Contact Us</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </Link>
 
           {!isOpen && (
             <MyCustomButton

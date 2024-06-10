@@ -1,5 +1,5 @@
-.icon-fb {
-  color: #007bff !important;
+.contact-icon {
+  color: red !important;
 }
 
 .contact-container {
@@ -15,6 +15,11 @@
   position: relative;
   top: 0;
   overflow: hidden;
+}
+.contact-item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-container .left2 {

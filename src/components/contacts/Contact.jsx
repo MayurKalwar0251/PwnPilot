@@ -11,16 +11,16 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="left2">
-        <p className="heading">Follow On:</p>
+        <p className="contact-heading">Follow On:</p>
         <ul>
-          <li className="item">
-            <FaFacebookF className="icon-fb" />
+          <li className="contact-item">
+            <FaFacebookF className="contact-icon" />
           </li>
-          <li className="item">
-            <FaInstagram />
+          <li className="contact-item">
+            <FaInstagram className="contact-icon" />
           </li>
-          <li className="item">
-            <FaLinkedin />
+          <li className="contact-item">
+            <FaLinkedin className="contact-icon" />
           </li>
         </ul>
       </div>
@@ -28,21 +28,21 @@ const Contact = () => {
       <div className="r">
         <ul>
           <li>
-            <IoIosCall />
+            <IoIosCall className="contact-icon" />
             <p>For Sales</p>
             <p>+99999999</p>
           </li>
           <li>
-            <AiOutlineMail />
+            <AiOutlineMail className="contact-icon" />
             <p>sales@gmail.com</p>
           </li>
           <li>
-            <IoIosCall />
+            <IoIosCall className="contact-icon" />
             <p>For HR</p>
             <p>+99999999</p>
           </li>
           <li>
-            <AiOutlineMail />
+            <AiOutlineMail className="contact-icon" />
             <p>career@gmail.com</p>
           </li>
         </ul>

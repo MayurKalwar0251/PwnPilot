@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import Logo from "../../assets/Logo.png";
 import MyCustomButton from "../button/CommonButton";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,9 +19,6 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-first">
           <div className="footer-first-left">
-            <div className="footer-logo">
-              <img src={Logo} alt="Logo" />
-            </div>
             <p className="txt">
               We excel in information security, delivering expert services,
               deploying solutions, and providing training. Our dedicated team
@@ -58,38 +56,82 @@ const Footer = () => {
             <div className="footer-section">
               <h3>Our Services</h3>
               <ul>
-                <li>Web Application Security</li>
-                <li>SAST and DAST Scanning</li>
-                <li>API Security</li>
-                <li>Mobile Application</li>
-                <li>Penetration Testing</li>
-                <li>Vulnerability Assessment</li>
-                <li>Wifi Security</li>
+                <Link to={"/web-app-sec"}>
+                  <li>Web Application Security</li>
+                </Link>
+                <Link to={"/sast-dast"}>
+                  <li>SAST and DAST Scanning</li>
+                </Link>
+                <Link to={"/api-sec"}>
+                  <li>API Security</li>
+                </Link>
+                <Link to={"/mob-app"}>
+                  <li>Mobile Application</li>
+                </Link>
+                <Link to={"/penetrat-test"}>
+                  <li>Penetration Testing</li>
+                </Link>
+                <Link to={"/vulner-asses"}>
+                  <li>Vulnerability Assessment</li>
+                </Link>
+                <Link to={"/wifi-sec"}>
+                  <li>Wifi Security</li>
+                </Link>
               </ul>
             </div>
             <div className="footer-section">
               <h3>Our Services</h3>
               <ul>
-                <li>Regulatory Compliance Implementation</li>
-                <li>Security Compliance Implementation</li>
-                <li>Policy Procedure Designing</li>
-                <li>NIST Guidelines</li>
-                <li>Risk Assessment and Treatment</li>
-                <li>Regulatory Compliance Audit</li>
-                <li>Security Compliance Audit</li>
-                <li>Red Teaming</li>
-                <li>DevSecOps</li>
+                <Link to={"/reg-comp-imp"}>
+                  <li>Regulatory Compliance Implementation</li>
+                </Link>
+                <Link to={"/sec-comp-imp"}>
+                  <li>Security Compliance Implementation</li>
+                </Link>
+                <Link to={"/pol-proc-des"}>
+                  <li>Policy Procedure Designing</li>
+                </Link>
+                <Link to={"/nist-gui"}>
+                  <li>NIST Guidelines</li>
+                </Link>
+                <Link to={"/risk-ass"}>
+                  <li>Risk Assessment and Treatment</li>
+                </Link>
+                <Link to={"/reg-comp-aud"}>
+                  <li>Regulatory Compliance Audit</li>
+                </Link>
+                <Link to={"/sec-comp-aud"}>
+                  <li>Security Compliance Audit</li>
+                </Link>
+                <Link to={"/red-team"}>
+                  <li>Red Teaming</li>
+                </Link>
+                <Link to={"/dev-sec-ops"}>
+                  <li>DevSecOps</li>
+                </Link>
               </ul>
             </div>
             <div className="footer-section">
               <h3>Industries We Serve</h3>
               <ul>
-                <li>BFSI</li>
-                <li>Manufacturing</li>
-                <li>Pharmaceutical</li>
-                <li>Technology</li>
-                <li>Government</li>
-                <li>Education</li>
+                <Link to={"/bfsi"}>
+                  <li>BFSI</li>
+                </Link>
+                <Link to={"/manu"}>
+                  <li>Manufacturing</li>
+                </Link>
+                <Link to={"/pharma"}>
+                  <li>Pharmaceutical</li>
+                </Link>
+                <Link to={"/tech"}>
+                  <li>Technology</li>
+                </Link>
+                <Link to={"/gov"}>
+                  <li>Government</li>
+                </Link>
+                <Link to={"/edu"}>
+                  <li>Education</li>
+                </Link>
               </ul>
             </div>
           </div>

@@ -56,7 +56,9 @@
 }
 
 .footer-logo {
-  height: 100px;
+  overflow: hidden;
+  background-color: aqua;
+  height: 40px;
   width: 300px;
 }
 

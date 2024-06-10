@@ -23,7 +23,7 @@
 }
 
 .rippleEffect.active {
-  animation: rippleEffect 1.2s ease-in-out;
+  animation: rippleEffect 0.8s ease-in-out;
 }
 
 @keyframes rippleEffect {

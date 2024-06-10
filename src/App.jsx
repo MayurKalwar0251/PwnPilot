@@ -1,39 +1,86 @@
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
-import Contact from "./components/contacts/Contact";
-import Assesments from "./components/assesments/Assesments";
-import CyberSecuritySImplify from "./components/cyber security simplified/CyberSecuritySImplify";
-import Row4Elements from "./components/row4elements/Row4Elements";
-import TrustedCyber from "./components/trusted cyber/TrustedCyber";
-import SolutionOffer from "./components/solution offer/SolutionOffer";
-import CyberDetail4 from "./components/cyber detail 4/CyberDetail4";
-import CollaboratingClosely from "./components/collaborating closely pink/CollaboratingClosely";
-import WhoWeServe from "./components/who we serve/WhoWeServe";
-import LeadershipTeam from "./components/leadership team/LeadershipTeam";
-import EvolutionOfCyber from "./components/evolution of cyber/EvolutionOfCyber";
-import Footer from "./components/footer/Footer";
+import { Route, BrowserRouter, Routes, useLocation } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ServicesPage from "./pages/ServicesPage";
+import Industries from "./pages/Industries";
+import Products from "./pages/Products";
+import Company from "./pages/Company";
+import WebAppSec from "./pages/services pages/WebAppSec";
+import SastDast from "./pages/services pages/SastDast";
+import ApiSec from "./pages/services pages/ApiSec";
+import MobApp from "./pages/services pages/MobApp";
+import PenetratTest from "./pages/services pages/PenetratTest";
+import VulnerAsses from "./pages/services pages/VulnerAsses";
+import WifiSec from "./pages/services pages/WifiSec";
+import RegCompAud from "./pages/services pages/regCompAud";
+import RegCompImp from "./pages/services pages/reguCompImp";
+import SecCompImp from "./pages/services pages/secCompImp";
+import SecCompAud from "./pages/services pages/secCompAud";
+import RishAssAt from "./pages/services pages/riskAssAT";
+import RedTeam from "./pages/services pages/redTeam";
+import DevSecOps from "./pages/services pages/devSecOps";
+import PolProDesc from "./pages/services pages/polProDes";
+import NisTGui from "./pages/services pages/nistGui";
+import BFSI from "./pages/industries pages/BFSI";
+import Edu from "./pages/industries pages/edu";
+import Gov from "./pages/industries pages/gov";
+import Manu from "./pages/industries pages/Manu";
+import Pharmaceutical from "./pages/industries pages/pharma";
+import Tech from "./pages/industries pages/tech";
+import { useEffect } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
-    <>
-      <div>
-        <Contact />
-        <Navbar />
-        <Hero />
-        <Assesments />
-        <CyberSecuritySImplify />
-        <Row4Elements />
-        <TrustedCyber />
-        <SolutionOffer />
-        <CyberDetail4 />
-        <CollaboratingClosely />
-        <WhoWeServe />
-        <LeadershipTeam />
-        <EvolutionOfCyber />
-        <Footer />
-      </div>
-    </>
+    <div>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/company" element={<Company />} />
+
+          <Route path="/web-app-sec" element={<WebAppSec />} />
+          <Route path="/sast-dast" element={<SastDast />} />
+          <Route path="/api-sec" element={<ApiSec />} />
+          <Route path="/mob-app" element={<MobApp />} />
+          <Route path="/penetrat-test" element={<PenetratTest />} />
+          <Route path="/vulner-asses" element={<VulnerAsses />} />
+          <Route path="/wifi-sec" element={<WifiSec />} />
+
+          <Route path="/reg-comp-imp" element={<RegCompImp />} />
+          <Route path="/sec-comp-imp" element={<SecCompImp />} />
+          <Route path="/pol-proc-des" element={<PolProDesc />} />
+          <Route path="/nist-gui" element={<NisTGui />} />
+          <Route path="/risk-ass" element={<RishAssAt />} />
+          <Route path="/reg-comp-aud" element={<RegCompAud />} />
+          <Route path="/sec-comp-aud" element={<SecCompAud />} />
+          <Route path="/red-team" element={<RedTeam />} />
+          <Route path="/dev-sec-ops" element={<DevSecOps />} />
+
+          <Route path="/bfsi" element={<BFSI />} />
+          <Route path="/edu" element={<Edu />} />
+          <Route path="/gov" element={<Gov />} />
+          <Route path="/manu" element={<Manu />} />
+          <Route path="/pharma" element={<Pharmaceutical />} />
+          <Route path="/tech" element={<Tech />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
