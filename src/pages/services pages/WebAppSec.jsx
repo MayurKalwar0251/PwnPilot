@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const WebAppSec = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Web Application Security Testing"}
         bgText={""}

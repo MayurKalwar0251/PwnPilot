@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const SecCompImp = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Security Compliance Implementation"}
         bgText={""}

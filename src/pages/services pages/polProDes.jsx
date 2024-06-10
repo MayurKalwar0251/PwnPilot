@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const PolProDesc = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Policy Procedure Designing"}
         bgText={""}

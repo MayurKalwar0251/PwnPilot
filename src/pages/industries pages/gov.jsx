@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const Gov = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Government"}
         bgText={"Industries"}

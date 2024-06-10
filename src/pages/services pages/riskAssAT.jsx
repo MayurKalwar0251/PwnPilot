@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const RishAssAt = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Risk Assessment and Treatment"}
         bgText={""}

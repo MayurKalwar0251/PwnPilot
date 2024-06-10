@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const RegCompAud = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Regulatory Compliance Audit"}
         bgText={""}

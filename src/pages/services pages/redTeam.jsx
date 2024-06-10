@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const RedTeam = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Red Teaming"}
         bgText={""}

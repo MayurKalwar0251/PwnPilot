@@ -28,6 +28,13 @@ import Manu from "./pages/industries pages/Manu";
 import Pharmaceutical from "./pages/industries pages/pharma";
 import Tech from "./pages/industries pages/tech";
 import { useEffect } from "react";
+import NavbarContact from "./components/navbar/NavbarContact";
+import About from "./pages/contact pages/about";
+import Career from "./pages/contact pages/career";
+import CertIn from "./pages/contact pages/cert-in";
+import Key25 from "./pages/contact pages/key25";
+import Leadership from "./pages/contact pages/leadership";
+import ContactUs from "./pages/contact pages/contact";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -47,6 +54,8 @@ function App() {
     <div>
       <BrowserRouter>
         <ScrollToTop />
+        <NavbarContact />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
@@ -78,6 +87,13 @@ function App() {
           <Route path="/manu" element={<Manu />} />
           <Route path="/pharma" element={<Pharmaceutical />} />
           <Route path="/tech" element={<Tech />} />
+
+          <Route path="/about" element={<About />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/cert-in" element={<CertIn />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/key25" element={<Key25 />} />
+          <Route path="/leadership" element={<Leadership />} />
         </Routes>
       </BrowserRouter>
     </div>

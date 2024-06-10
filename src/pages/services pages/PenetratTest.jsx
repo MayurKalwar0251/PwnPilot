@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const PenetratTest = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Infrastructure Penetration Testing"}
         bgText={""}

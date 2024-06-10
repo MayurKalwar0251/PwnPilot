@@ -1,18 +1,15 @@
 import React from "react";
-import Contact from "../components/contacts/Contact";
-import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import EvolutionOfCyber from "../components/evolution of cyber/EvolutionOfCyber";
 import PageHeader from "../components/pageHeader/PageHeader";
 import Assesments from "../components/assesments/Assesments";
 import Row4Elements from "../components/row4elements/Row4Elements";
 import CollaboratingClosely from "../components/collaborating closely pink/CollaboratingClosely";
+import NavbarContact from "../components/navbar/NavbarContact";
 
 const ServicesPage = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Services"}
         arrayOfLink={[

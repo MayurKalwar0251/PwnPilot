@@ -12,8 +12,6 @@ import Row4Elements from "../components/row4elements/Row4Elements";
 const Company = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"About Us"}
         arrayOfLink={[

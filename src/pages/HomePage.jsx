@@ -13,12 +13,11 @@ import CollaboratingClosely from "../components/collaborating closely pink/Colla
 import WhoWeServe from "../components/who we serve/WhoWeServe";
 import LeadershipTeam from "../components/leadership team/LeadershipTeam";
 import EvolutionOfCyber from "../components/evolution of cyber/EvolutionOfCyber";
+import NavbarContact from "../components/navbar/NavbarContact";
 
 const HomePage = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <Hero />
       <Assesments />
       <CyberSecuritySImplify />

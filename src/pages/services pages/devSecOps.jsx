@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const DevSecOps = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"DevSecOps"}
         bgText={""}

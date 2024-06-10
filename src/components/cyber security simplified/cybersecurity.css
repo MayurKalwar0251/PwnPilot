@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
 
-  height: 90vh;
-  /* height: auto; */
-
+  height: auto;
   align-items: center;
   opacity: 0.9;
   align-items: center;
+  gap: 20px;
+  padding: 30px;
 }
 
 .cyber-left {
@@ -55,7 +54,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 90%;
   padding-right: 30px;
 }
 
@@ -95,8 +93,6 @@
   justify-content: space-between;
   width: 100%;
   text-align: center;
-
-  height: 200px;
 }
 
 .cyber-right .detail .det {
@@ -104,7 +100,6 @@
   width: 49%;
   justify-content: center;
   align-items: center;
-  height: 90px;
   margin-top: 20px;
 }
 
@@ -125,17 +120,24 @@
   line-height: 22px;
 }
 
+@media (max-width: 1400px) {
+  img {
+    width: 40%;
+  }
+}
+
 @media (max-width: 1300px) {
   .cyber-container {
-    height: 120vh;
-    gap: 0px;
+    gap: 20px;
+    padding: 20px;
   }
 
   .cyber-left {
-    padding-left: 10px;
+    padding: 10px;
     justify-content: flex-start;
-    gap: 0px;
+    gap: 10px;
     width: 40%;
+    overflow: hidden;
   }
 
   .cyber-right {
@@ -143,11 +145,11 @@
   }
 
   img {
-    width: 90%;
+    width: 30%;
   }
 
   .cyber-left .left-down {
-    width: 90%;
+    width: 100%;
   }
 
   .cyber-left .left-right {
@@ -158,7 +160,6 @@
 
 @media (max-width: 1000px) {
   .cyber-container {
-    height: 120vh;
     padding: 0px;
 
     flex-direction: column;
@@ -210,7 +211,6 @@
     margin-top: 0px;
   }
   .cyber-right {
-    height: 60%;
     width: 80%;
     gap: 10px;
   }
@@ -236,7 +236,6 @@
   }
 
   .cyber-right .detail {
-    height: 300px;
   }
 
   .cyber-right .detail .det p {
@@ -247,9 +246,6 @@
 
 @media (max-width: 480px) {
   .cyber-container {
-    height: 150vh;
     width: 100%;
-  }
-  .cyber-right {
   }
 }

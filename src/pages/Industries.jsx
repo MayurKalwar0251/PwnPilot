@@ -8,8 +8,6 @@ import Footer from "../components/footer/Footer";
 const Industries = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Industries Served"}
         bgText={"Industries"}

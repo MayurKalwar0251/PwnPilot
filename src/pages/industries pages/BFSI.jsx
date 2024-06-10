@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const BFSI = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Banking, Financial Services and Insurance (BFSI)"}
         bgText={"Industries"}

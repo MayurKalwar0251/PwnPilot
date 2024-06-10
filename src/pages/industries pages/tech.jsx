@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const Tech = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Technology"}
         bgText={"Industries"}

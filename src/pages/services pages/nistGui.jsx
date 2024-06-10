@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const NisTGui = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"NIST Guidelines"}
         bgText={""}

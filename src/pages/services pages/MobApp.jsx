@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const MobApp = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Mobile Application Security Testing"}
         bgText={""}

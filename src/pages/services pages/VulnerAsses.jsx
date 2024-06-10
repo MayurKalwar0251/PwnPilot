@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const VulnerAsses = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Infrastructure Vulnerability Assessment"}
         bgText={""}

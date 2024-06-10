@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const ApiSec = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"API Security Testing"}
         bgText={""}

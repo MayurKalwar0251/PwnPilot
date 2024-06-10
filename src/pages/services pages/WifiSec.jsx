@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const WifiSec = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"Wifi Security Testing"}
         bgText={""}

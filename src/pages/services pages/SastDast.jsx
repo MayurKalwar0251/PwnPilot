@@ -7,8 +7,6 @@ import Footer from "../../components/footer/Footer";
 const SastDast = () => {
   return (
     <div>
-      <Contact />
-      <Navbar />
       <PageHeader
         name={"SAST and DAST Scanning Services"}
         bgText={""}
