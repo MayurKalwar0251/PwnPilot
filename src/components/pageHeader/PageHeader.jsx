@@ -19,10 +19,24 @@ const PageHeader = ({ name, bgText = name, arrayOfLink }) => {
             {arrayOfLink.map((link, index) => (
               <React.Fragment key={index}>
                 {link.path == "#" ? (
-                  <span>{link.name}</span>
+                  <span
+                    style={
+                      index === arrayOfLink.length - 1
+                        ? { color: "red", fontSize: "20px" }
+                        : {}
+                    }
+                  >
+                    {link.name}
+                  </span>
                 ) : (
                   <Link to={link.path} className="header-link">
-                    <span>{link.name}</span>
+                    <span
+                      style={
+                        index === arrayOfLink.length - 1 ? { color: "red" } : {}
+                      }
+                    >
+                      {link.name}
+                    </span>
                   </Link>
                 )}
                 {index < arrayOfLink.length - 1 && (

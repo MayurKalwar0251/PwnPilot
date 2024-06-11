@@ -159,17 +159,21 @@ a {
   display: none;
   position: absolute;
   top: 10px;
-  left: 20px;
+  left: 30px;
   font-size: 30px;
-  background-color: transparent;
   border: none;
   cursor: pointer;
   z-index: 2;
+
   color: white;
 }
 
+.cancel-button img {
+  background-color: black;
+}
+
 .cancel-button:hover {
-  color: white;
+  color: red;
 }
 
 /* Media Query for Mobile View */
@@ -197,7 +201,7 @@ a {
     transition: right 0.3s ease-in-out;
     overflow-y: auto; /* Add this to make the menu scrollable */
     gap: 0px;
-    padding-top: 50px;
+    padding-top: 80px;
     justify-content: flex-start;
   }
 

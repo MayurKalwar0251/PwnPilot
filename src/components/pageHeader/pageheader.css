@@ -100,4 +100,18 @@ nav span {
     left: -30%;
     bottom: -30%;
   }
+  .header-text h1 {
+    font-size: 2rem;
+    align-items: center;
+  }
+  span {
+    font-size: 15px !important;
+    display: flex;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }

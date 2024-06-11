@@ -2,6 +2,8 @@ import React from "react";
 import "./evolution-of-cyber.css";
 import backgroundImage from "../../assets/can-help-background.png"; // Update the path accordingly
 import Icon from "../../assets/cancel.png";
+import CallIcon from "../../assets/phone.png";
+import MessageIcon from "../../assets/message.png";
 import MyCustomButton from "../button/CommonButton.jsx";
 
 const EvolutionOfCyber = () => {
@@ -26,18 +28,19 @@ const EvolutionOfCyber = () => {
             <div className="evolution-btns">
               <div className="evolution-btn">
                 <div className="evolution-icon">
-                  <img src={Icon} alt="" srcset="" />
+                  <img src={CallIcon} alt="" srcset="" />
                 </div>
                 <div className="evolution-call">
-                  Call Us <br /> +91921921212
+                  Call Us Today
+                  <br /> +91921921212
                 </div>
               </div>
               <div className="evolution-btn">
                 <div className="evolution-icon">
-                  <img src={Icon} alt="" />
+                  <img src={MessageIcon} alt="" />
                 </div>
                 <div className="evolution-call">
-                  Call Us <br /> +91921921212
+                  Email Drop Us <br /> sales@gmail.com
                 </div>
               </div>
             </div>
