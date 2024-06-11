@@ -1,11 +1,5 @@
 :root {
   --primary-color: rgb(239, 3, 72);
-<<<<<<< HEAD
-  --secondary-color: rgba(254, 189, 2, 255);
-=======
-  --secondary-color:rgba(254,189,2,255) ;
->>>>>>> 7195ac70871e168f2a824b66c3d43cefba157e50
-  --black-color: rgb(25, 25, 25);
 }
 
 * {
