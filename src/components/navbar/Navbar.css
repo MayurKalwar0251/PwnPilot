@@ -176,9 +176,55 @@ a {
   color: var(--primary-color);
 }
 
-/* Media Query for Mobile View */
-/* Media Query for Mobile View */
+/* services */
+
+.services-container {
+  position: absolute;
+  top: 20px; /* Adjust the top position to align with the navbar height */
+  left: 0;
+  padding: 30px;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%; /* Add this to make the grid take the full width */
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+  width: max-content;
+}
+
+.services-card ul {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.services-card ul li:hover {
+  color: var(--primary-color);
+  background-color: #f0f0f0;
+}
+.services-card ul li {
+  color: black;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+
 @media (max-width: 1200px) {
+  .services-container {
+    display: none;
+  }
+
   .btn-ham {
     display: flex;
     align-items: center;
@@ -215,11 +261,11 @@ a {
     height: 40px;
     display: flex;
     justify-content: start;
-    margin-inline: 10px;
+    padding-inline: 10px;
   }
 
   .item:hover {
-    color: black;
+    color: var(--primary-color);
   }
 
   .items.open {

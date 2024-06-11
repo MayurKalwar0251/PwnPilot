@@ -19,6 +19,8 @@ const NavbarContact = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  const [showServices, setShowServices] = useState(false);
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 1200) {
@@ -70,6 +72,10 @@ const NavbarContact = () => {
 
   const handleMouseLeaveItem = () => {
     handleDropdownClose();
+  };
+
+  const handleServices = () => {
+    setShowServices(!showServices);
   };
   return (
     <div className="nav-con">
@@ -153,17 +159,84 @@ const NavbarContact = () => {
               <Link to={"/services"}>
                 <div
                   className="item"
-                  onMouseEnter={() => handleDropdownToggle("Services")}
-                  onMouseLeave={handleMouseLeaveItem}
+                  onMouseEnter={handleServices}
+                  onMouseLeave={handleServices}
                 >
                   <p>Services</p>
-                  {showDropdown && activeDropdown === "Services" && (
-                    <div className="dropdown">
-                      <ul>
-                        <li>Service 1</li>
-                        <li>Service 2</li>
-                        <li>Service 3</li>
-                      </ul>
+                  {showServices && (
+                    <div className="services-container">
+                      <div className="services-grid">
+                        <div className="services-card">
+                          <h3 className="card-header">Security Assesment</h3>
+                          <ul>
+                            <Link to={"/web-app-sec"}>
+                              <li>Web Application Security</li>
+                            </Link>
+                            <Link to={"/sast-dast"}>
+                              <li>SAST and DAST Scanning</li>
+                            </Link>
+                            <Link to={"/api-sec"}>
+                              <li>API Security</li>
+                            </Link>
+                            <Link to={"/mob-app"}>
+                              <li>Mobile Application</li>
+                            </Link>
+                            <Link to={"/penetrat-test"}>
+                              <li>Penetration Testing</li>
+                            </Link>
+                            <Link to={"/vulner-asses"}>
+                              <li>Vulnerability Assessment</li>
+                            </Link>
+                            <Link to={"/wifi-sec"}>
+                              <li>Wifi Security</li>
+                            </Link>
+                          </ul>
+                        </div>
+                        <div className="services-card">
+                          <h3 className="card-header">Security Consulting</h3>
+                          <ul>
+                            <Link to={"/reg-comp-imp"}>
+                              <li>Regulatory Compliance Implementation</li>
+                            </Link>
+                            <Link to={"/sec-comp-imp"}>
+                              <li>Security Compliance Implementation</li>
+                            </Link>
+                            <Link to={"/pol-proc-des"}>
+                              <li>Policy Procedure Designing</li>
+                            </Link>
+                            <Link to={"/nist-gui"}>
+                              <li>NIST Guidelines</li>
+                            </Link>
+                            <Link to={"/risk-ass"}>
+                              <li>Risk Assessment and Treatment</li>
+                            </Link>
+                          </ul>
+                        </div>
+                        <div className="services-card">
+                          <h3 className="card-header">
+                            Security Compilance Services
+                          </h3>
+                          <ul>
+                            <Link to={"/reg-comp-aud"}>
+                              <li>Regulatory Compliance Audit</li>
+                            </Link>
+                            <Link to={"/sec-comp-aud"}>
+                              <li>Security Compliance Audit</li>
+                            </Link>
+                          </ul>
+                        </div>
+                        <div className="services-card">
+                          <h3 className="card-header">Advanced Services</h3>
+                          <ul>
+                            <Link to={"/red-team"}>
+                              <li>Red Teaming</li>
+                            </Link>
+                            <Link to={"/dev-sec-ops"}>
+                              <li>DevSecOps</li>
+                            </Link>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   )}
                 </div>
