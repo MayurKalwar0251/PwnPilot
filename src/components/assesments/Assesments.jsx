@@ -9,7 +9,7 @@ import Inter from "../../assets/international.svg";
 const Assesments = () => {
   return (
     <div className="container2" data-aos="fade-up">
-      <div className="box">
+      <div className="box" data-aos="fade-up">
         <div className="icon">
           <ReactSVG src={G} className="ico" />
         </div>
@@ -22,7 +22,7 @@ const Assesments = () => {
           </p>
         </div>
       </div>
-      <div className="box">
+      <div className="box" data-aos="fade-up">
         <div className="icon">
           <ReactSVG src={Inter} className="ico" />
         </div>
@@ -34,7 +34,7 @@ const Assesments = () => {
           </p>
         </div>
       </div>
-      <div className="box">
+      <div className="box" data-aos="fade-up">
         <div className="icon">
           <ReactSVG src={Inter} className="ico" />
         </div>
