@@ -1,5 +1,7 @@
 :root {
   --primary-color: rgb(239, 3, 72);
+  --secondary-color: rgba(254, 189, 2, 255);
+  --black-color: rgb(25, 25, 25);
 }
 
 * {
