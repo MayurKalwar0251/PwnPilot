@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Contact from "../components/contacts/Contact";
 import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
@@ -13,18 +13,17 @@ import CollaboratingClosely from "../components/collaborating closely pink/Colla
 import WhoWeServe from "../components/who we serve/WhoWeServe";
 import LeadershipTeam from "../components/leadership team/LeadershipTeam";
 import EvolutionOfCyber from "../components/evolution of cyber/EvolutionOfCyber";
-import NavbarContact from "../components/navbar/NavbarContact";
 
 const HomePage = () => {
   return (
-    <div>
+    <div data-aos="fade-up">
       <Hero />
       <Assesments />
       <CyberSecuritySImplify />
-      <CyberDetail4 />
+      <Row4Elements />
       <TrustedCyber />
       <SolutionOffer />
-      <Row4Elements />
+      <CyberDetail4 />
       <CollaboratingClosely />
       <WhoWeServe />
       <LeadershipTeam />

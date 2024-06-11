@@ -14,7 +14,7 @@
 .rippleEffect {
   width: 10px;
   height: 60px;
-  background-color: #d0ff00;
+  background-color: var(--secondary-color);
   position: absolute;
   top: 50%;
   left: 50%;

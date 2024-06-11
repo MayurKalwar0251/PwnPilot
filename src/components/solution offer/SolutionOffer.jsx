@@ -4,14 +4,14 @@ import MyCustomButton from "../button/CommonButton";
 
 const SolutionOffer = () => {
   return (
-    <div className="solution-container">
-      <div className="solution-left">
+    <div className="solution-container" data-aos="fade-up">
+      <div className="solution-left" data-aos="fade-up">
         <p className="solution-title">Advanced Services</p>
         <p className="solution-head">
           Specialized Cyber Security Solutions Offered
         </p>
       </div>
-      <div className="solution-right">
+      <div className="solution-right" data-aos="fade-up">
         <div className="solution-txt">
           Our specialized cyber security solutions are crafted to tackle the
           distinct challenges businesses encounter in securing their digital

@@ -15,7 +15,7 @@
 }
 
 .leader-head {
-  color: red;
+  color: var(--primary-color);
   font-size: 22px;
 }
 
@@ -37,7 +37,7 @@
   background-color: white;
   align-items: center;
   padding: 0px 10px;
-  border-top: 10px solid red;
+  border-top: 10px solid var(--primary-color);
   justify-content: space-between;
   position: relative; /* add this */
 }

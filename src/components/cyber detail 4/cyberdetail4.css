@@ -37,12 +37,12 @@
 }
 
 .cyber-detail-btn {
-  color: red;
+  color: var(--primary-color);
   transition: all 0.4s ease-in-out;
 }
 
 .cyber-detail-btn :hover {
-  color: black;
+  color: var(--black-color);
 }
 
 @media (max-width: 1300px) {

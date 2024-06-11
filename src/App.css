@@ -1,3 +1,9 @@
+:root {
+  --primary-color: rgb(239, 3, 72);
+  --secondary-color: rgb(239, 233, 72);
+  --black-color: rgb(25, 25, 25);
+}
+
 * {
   padding: 0px;
   margin: 0px;

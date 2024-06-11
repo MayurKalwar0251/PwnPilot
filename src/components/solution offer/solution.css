@@ -3,9 +3,8 @@
   height: auto;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   font-family: sans-serif;
-  padding: 30px 0px;
+  padding: 100px 0px;
   gap: 30px;
 }
 
@@ -25,7 +24,7 @@
 }
 .solution-title {
   font-size: 22px;
-  color: red;
+  color: var(--primary-color);
 }
 
 .solution-txt {
@@ -44,7 +43,7 @@
 }
 
 .solution-btn {
-  background-color: red;
+  background-color: var(--primary-color);
   padding: 15px 20px;
   font-family: sans-serif;
 }

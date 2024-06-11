@@ -10,11 +10,12 @@ const EvolutionOfCyber = () => {
   return (
     <div
       className="evolution-container"
+      data-aos="fade-up"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="evolution-overlay">
         <div className="evolution-content">
-          <div className="evolution-left">
+          <div className="evolution-left" data-aos="fade-up">
             <p className="evolution-head">
               Experience The Evolution Of Your Cybersecurity
             </p>
@@ -45,8 +46,8 @@ const EvolutionOfCyber = () => {
               </div>
             </div>
           </div>
-          <div className="evolution-right">
-            <div className="form">
+          <div className="evolution-right" data-aos="fade-up">
+            <div className="form" data-aos="fade-up">
               <div className="form-head">GET IN TOUCH</div>
               <div className="form-title">Free Consultation</div>
               <div className="form-inputs">

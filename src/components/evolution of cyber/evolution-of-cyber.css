@@ -92,7 +92,7 @@ img {
 }
 
 .evolution-call:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .evolution-right {
@@ -118,7 +118,7 @@ img {
 
 .form-head {
   font-size: 20px;
-  color: red;
+  color: var(--primary-color);
 }
 
 .form-title {
@@ -144,7 +144,7 @@ textarea {
 }
 
 .form-btn {
-  background-color: red;
+  background-color: var(--primary-color);
   color: white;
   padding: 15px;
   width: max-content;

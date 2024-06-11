@@ -5,9 +5,9 @@ import { ReactSVG } from "react-svg";
 
 const CyberDetail4 = () => {
   return (
-    <div className="cyber-detail-container">
+    <div className="cyber-detail-container" data-aos="fade-up">
       <div className="cyber-detail-grid">
-        <div className="cyber-detail-card">
+        <div className="cyber-detail-card" data-aos="fade-up">
           <div className="cyber-detail-icon">
             <ReactSVG src={Inter} className="ico" />
           </div>
@@ -19,7 +19,7 @@ const CyberDetail4 = () => {
           </div>
           <div className="cyber-detail-btn">Read More &gt;</div>
         </div>
-        <div className="cyber-detail-card">
+        <div className="cyber-detail-card" data-aos="fade-up">
           <div className="cyber-detail-icon">
             <ReactSVG src={Inter} className="ico" />
           </div>
@@ -31,7 +31,7 @@ const CyberDetail4 = () => {
           </div>
           <div className="cyber-detail-btn">Read More &gt;</div>
         </div>
-        <div className="cyber-detail-card">
+        <div className="cyber-detail-card" data-aos="fade-up">
           <div className="cyber-detail-icon">
             <ReactSVG src={Inter} className="ico" />
           </div>
@@ -43,7 +43,7 @@ const CyberDetail4 = () => {
           </div>
           <div className="cyber-detail-btn">Read More &gt;</div>
         </div>
-        <div className="cyber-detail-card">
+        <div className="cyber-detail-card" data-aos="fade-up">
           <div className="cyber-detail-icon">
             <ReactSVG src={Inter} className="ico" />
           </div>

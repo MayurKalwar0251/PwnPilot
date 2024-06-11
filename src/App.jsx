@@ -35,7 +35,8 @@ import CertIn from "./pages/contact pages/cert-in";
 import Key25 from "./pages/contact pages/key25";
 import Leadership from "./pages/contact pages/leadership";
 import ContactUs from "./pages/contact pages/contact";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -50,10 +51,13 @@ function ScrollToTop() {
 }
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <BrowserRouter>
-        <ScrollToTop />
+        <ScrollToTop data-aos="fade-up" />
         <NavbarContact />
 
         <Routes>

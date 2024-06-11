@@ -17,7 +17,7 @@
 }
 
 .header-link:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .header-pattern {
@@ -66,11 +66,11 @@ nav span {
 
 .separator {
   margin-left: 5px;
-  color: red;
+  color: var(--primary-color);
 }
 
 .current-page {
-  color: red;
+  color: var(--primary-color);
 }
 
 .header-icon {

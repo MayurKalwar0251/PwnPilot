@@ -32,7 +32,7 @@
   width: 250px; /* Add width: 100% to make it take the full width of its parent */
   display: flex;
   flex-direction: column;
-  border-top: 4px solid rgb(253, 192, 0);
+  border-top: 4px solid var(--secondary-color);
 }
 
 .dropdown ul {
@@ -60,7 +60,7 @@ a {
 
 .dropdown li:hover {
   background-color: #f0f0f0;
-  color: red;
+  color: var(--primary-color);
 }
 
 .item:hover .dropdown {
@@ -116,7 +116,7 @@ a {
 }
 
 .item:hover {
-  color: rgb(253, 192, 0);
+  color: var(--secondary-color);
 }
 
 .btn {
@@ -173,7 +173,7 @@ a {
 }
 
 .cancel-button:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 /* Media Query for Mobile View */

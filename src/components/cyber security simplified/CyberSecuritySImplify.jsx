@@ -4,6 +4,7 @@ import "./cybersecurity.css";
 import Company1 from "../../assets/our-company-1.png";
 import Company2 from "../../assets/our-company-2.png";
 import { FaStar } from "react-icons/fa6";
+import CountUp from "react-countup";
 
 const CyberSecuritySImplify = () => {
   return (
@@ -14,7 +15,17 @@ const CyberSecuritySImplify = () => {
             <img src={Company1} alt="Company" />
           </div>
           <div className="left-down">
-            <p className="no">23+</p>
+            <p className="no">
+              <CountUp
+                enableScrollSpy={true}
+                scrollSpyOnce={true}
+                start={0}
+                end={23}
+                duration={1}
+                className="count-txt"
+              />
+              +
+            </p>
             <p>Years Experience</p>
           </div>
         </div>
@@ -44,7 +55,17 @@ const CyberSecuritySImplify = () => {
         <div className="detail">
           <div className="det">
             <div className="info">
-              <p className="per">99.9%</p>
+              <p className="per">
+                <CountUp
+                  enableScrollSpy={true}
+                  scrollSpyOnce={true}
+                  start={0}
+                  end={99}
+                  duration={1}
+                  className="count-no"
+                />
+                %
+              </p>
               <p>
                 Boost your cybersecurity success with our established history of
                 delivering top-tier projects.
@@ -60,7 +81,17 @@ const CyberSecuritySImplify = () => {
           </div>
           <div className="det">
             <div className="info">
-              <p className="per">100%</p>
+              <p className="per">
+                <CountUp
+                  enableScrollSpy={true}
+                  scrollSpyOnce={true}
+                  start={0}
+                  end={100}
+                  duration={1}
+                  className="count-no"
+                />
+                %
+              </p>
               <p>
                 Our satisfied customers stand as a testament to our commitment
                 to fortifying cybersecurity.

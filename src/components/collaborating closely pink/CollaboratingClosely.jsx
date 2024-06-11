@@ -4,10 +4,10 @@ import Checkmark from "../../assets/checkmarx-logo-2.webp";
 
 const CollaboratingClosely = () => {
   return (
-    <div className="collab-container">
+    <div className="collab-container" data-aos="fade-up">
       <div className="collab-parent">
-        <div>CYBER SECURITY SOLUTION PARTNERS</div>
-        <div className="collab-head">
+        <div data-aos="fade-up">CYBER SECURITY SOLUTION PARTNERS</div>
+        <div className="collab-head" data-aos="fade-up">
           <p className="collab-head-left">
             Collaborating Closely on Cutting-Edge
           </p>

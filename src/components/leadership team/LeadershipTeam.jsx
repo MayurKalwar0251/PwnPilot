@@ -6,13 +6,13 @@ import Founder3 from "../../assets/founder3.webp";
 
 const LeadershipTeam = () => {
   return (
-    <div className="leader-container">
-      <div className="leader-inner">
+    <div className="leader-container" data-aos="fade-up">
+      <div className="leader-inner" data-aos="fade-up">
         <div className="leader-head"> OUR LEADERSHIP</div>
         <div className="leader-title">Leadership Team</div>
 
-        <div className="leader-grid">
-          <div className="leader-leader-card">
+        <div className="leader-grid" data-aos="fade-up">
+          <div className="leader-leader-card" data-aos="fade-up">
             <div className="leader-card-up">
               <img src={Founder1} alt="Founder Image" srcset="" />
               <div className="leader-card-overlay"></div>
@@ -22,7 +22,7 @@ const LeadershipTeam = () => {
               <p className="role">Co-Founder & Chief Executive Officer</p>
             </div>
           </div>
-          <div className="leader-leader-card">
+          <div className="leader-leader-card" data-aos="fade-up">
             <div className="leader-card-up">
               <img src={Founder2} alt="Founder Image" srcset="" />
               <div className="leader-card-overlay"></div>
@@ -32,7 +32,7 @@ const LeadershipTeam = () => {
               <p className="role">Co-Founder & Chief Technology Officer</p>
             </div>
           </div>
-          <div className="leader-leader-card">
+          <div className="leader-leader-card" data-aos="fade-up">
             <div className="leader-card-up">
               <img src={Founder3} alt="Founder Image" srcset="" />
               <div className="leader-card-overlay"></div>

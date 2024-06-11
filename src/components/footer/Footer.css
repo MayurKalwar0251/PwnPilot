@@ -10,7 +10,7 @@
 .footer-top {
   margin-inline: 70px;
   padding: 50px 80px;
-  background-color: red;
+  background-color: var(--primary-color);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,6 @@
 
 .footer-logo {
   overflow: hidden;
-  background-color: aqua;
   height: 40px;
   width: 300px;
 }
@@ -129,7 +128,7 @@
   transition: all 0.4s ease-in-out;
 }
 .footer-section ul li:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .working-card {
@@ -173,7 +172,7 @@
   transition: all 0.4s ease-in-out;
 }
 .footer-section-lower p:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .footer-bottom {
@@ -186,7 +185,7 @@
 }
 
 .company-name {
-  color: red;
+  color: var(--primary-color);
   font-weight: bold;
   font-size: x-large;
 }

@@ -31,7 +31,6 @@
 
 .trusted-left {
   width: 60%;
-  padding-top: 150px;
   display: flex;
   flex-direction: column;
 }
@@ -53,7 +52,7 @@
 }
 
 .trusted-btn {
-  background-color: red;
+  background-color: var(--primary-color);
   padding: 15px 20px;
   font-family: sans-serif;
 }

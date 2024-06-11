@@ -7,10 +7,11 @@ const TrustedCyber = () => {
   return (
     <div
       className="trusted-container"
+      data-aos="fade-up"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="overlay">
-        <div className="trusted-content">
+        <div className="trusted-content" data-aos="fade-up">
           <div className="trusted-left">
             <p className="trusted-head">
               Trusted cybersecurity <br /> experts delivering <br /> dependable

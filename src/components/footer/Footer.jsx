@@ -43,9 +43,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-middle">
-          <div className="middle-grid">
-            <div className="footer-section">
+        <div className="footer-middle" data-aos="fade-up">
+          <div className="middle-grid" data-aos="fade-up">
+            <div className="footer-section" data-aos="fade-up">
               <h3>Working Time</h3>
               <div className="working-card">
                 <p className="card-txt">Mon - Sat / 09am : 07pm</p>
@@ -53,7 +53,7 @@ const Footer = () => {
                 <p className="card-txt">Sunday Close</p>
               </div>
             </div>
-            <div className="footer-section">
+            <div className="footer-section" data-aos="fade-up">
               <h3>Our Services</h3>
               <ul>
                 <Link to={"/web-app-sec"}>
@@ -79,7 +79,7 @@ const Footer = () => {
                 </Link>
               </ul>
             </div>
-            <div className="footer-section">
+            <div className="footer-section" data-aos="fade-up">
               <h3>Our Services</h3>
               <ul>
                 <Link to={"/reg-comp-imp"}>
@@ -111,7 +111,7 @@ const Footer = () => {
                 </Link>
               </ul>
             </div>
-            <div className="footer-section">
+            <div className="footer-section" data-aos="fade-up">
               <h3>Industries We Serve</h3>
               <ul>
                 <Link to={"/bfsi"}>
@@ -138,8 +138,8 @@ const Footer = () => {
         </div>
 
         <div className="footer-lower">
-          <div className="lower-grid">
-            <div className="footer-section-lower">
+          <div className="lower-grid" data-aos="fade-up">
+            <div className="footer-section-lower" data-aos="fade-up">
               <h3>Dombivli Office:</h3>
               <p>
                 606 - 608, B-Wing, 6th Floor,
@@ -151,7 +151,7 @@ const Footer = () => {
                 421201
               </p>
             </div>
-            <div className="footer-section-lower">
+            <div className="footer-section-lower" data-aos="fade-up">
               <h3>Malad Office:</h3>
               <p>
                 Quantum Tower, Kalpataru
@@ -161,12 +161,12 @@ const Footer = () => {
                 Colony 2, Malad West <br /> Mumbai - 400 064
               </p>
             </div>
-            <div className="footer-section-lower">
+            <div className="footer-section-lower" data-aos="fade-up">
               <h3>Call Us Toll Free:</h3>
               <p>For Sales: +91 91 670 30335</p>
               <p>For HR: +91 90 046 04570</p>
             </div>
-            <div className="footer-section-lower">
+            <div className="footer-section-lower" data-aos="fade-up">
               <h3>Email Us:</h3>
               <p>sales@talakunchi.com</p>
               <p>careers@talakunchi.com</p>

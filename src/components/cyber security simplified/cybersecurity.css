@@ -22,7 +22,7 @@
 .cyber-left .left-down {
   margin-top: 15px;
   height: 200px;
-  background-color: rgb(255, 0, 0);
+  background-color: var(--primary-color);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 
@@ -37,6 +37,9 @@
 
 .cyber-left .left-down .no {
   font-size: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .cyber-left .left-right {
@@ -58,7 +61,7 @@
 }
 
 .cyber-right .head {
-  color: red;
+  color: var(--primary-color);
   font-size: 22px;
 }
 
@@ -83,8 +86,8 @@
   width: 49%;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: yellow;
+  background-color: var(--black-color);
+  color: var(--secondary-color);
   height: 60px;
 }
 
@@ -113,11 +116,23 @@
 
 .cyber-right .detail .det .per {
   font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.count-no {
+  font-size: 30px;
 }
 
 .cyber-right .detail .det p {
   letter-spacing: 1px;
   line-height: 22px;
+}
+
+.count-txt {
+  font-size: 60px;
 }
 
 @media (max-width: 1400px) {
@@ -206,6 +221,17 @@
   .cyber-left .left-down .no {
     font-size: 40px;
   }
+  .count-txt {
+    font-size: 40px;
+  }
+
+  .cyber-right .detail .det .per {
+    font-size: 20px;
+  }
+
+  .count-no {
+    font-size: 20px !important;
+  }
 
   .cyber-left .left-right {
     margin-top: 0px;
@@ -230,8 +256,8 @@
     width: 49%;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: yellow;
+    background-color: var(--black-color);
+    color: var(--secondary-color);
     height: 60px;
   }
 
@@ -247,5 +273,8 @@
 @media (max-width: 480px) {
   .cyber-container {
     width: 100%;
+  }
+  .count-txt {
+    font-size: 30px !important;
   }
 }
