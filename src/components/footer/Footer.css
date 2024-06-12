@@ -1,3 +1,8 @@
+.divider {
+  border: 1px solid white;
+  padding-inline: 30px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -179,15 +184,21 @@
   display: flex;
   padding: 20px 100px;
   background-color: black;
-  justify-content: flex-start;
-  gap: 10px;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.bottom-left {
+  display: flex;
+  gap: 10px;
 }
 
 .company-name {
   color: var(--primary-color);
   font-weight: bold;
-  font-size: x-large;
+  font-size: 16px;
 }
 
 @media (max-width: 1200px) {
@@ -297,5 +308,14 @@
   .footer-section-lower {
     width: 100%;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .bottom-left {
+    flex-direction: column;
   }
 }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../../assets/Logo.png";
-import "./Navbar.css";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";

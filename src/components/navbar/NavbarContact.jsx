@@ -1,7 +1,7 @@
 import "./nav.css";
 import React, { useState, useEffect } from "react";
 import Logo from "../../assets/Logo.png";
-import "./Navbar.css";
+import "./navbar2.css";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -124,7 +124,9 @@ const NavbarContact = () => {
         <div
           className={`navbar-container ${scrolled ? "scrolled-navbar" : ""} ${
             isMobile ? "scrolled-navbar" : ""
-          }`}
+          }
+           ${showServices ? "dark-navbar" : ""}  
+          `}
         >
           <div className="navbar">
             <div className="logo">
@@ -209,19 +211,6 @@ const NavbarContact = () => {
                             </Link>
                             <Link to={"/risk-ass"}>
                               <li>Risk Assessment and Treatment</li>
-                            </Link>
-                          </ul>
-                        </div>
-                        <div className="services-card">
-                          <h3 className="card-header">
-                            Security Compilance Services
-                          </h3>
-                          <ul>
-                            <Link to={"/reg-comp-aud"}>
-                              <li>Regulatory Compliance Audit</li>
-                            </Link>
-                            <Link to={"/sec-comp-aud"}>
-                              <li>Security Compliance Audit</li>
                             </Link>
                           </ul>
                         </div>

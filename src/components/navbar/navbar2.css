@@ -6,6 +6,10 @@
   transition: top 0.3s ease-in-out;
 }
 
+.dark-navbar {
+  background-color: rgba(250, 252, 253, 255) !important;
+}
+
 .navbar {
   padding-inline: 50px;
   display: flex;
@@ -33,6 +37,7 @@
   display: flex;
   flex-direction: column;
   border-top: 4px solid var(--secondary-color);
+  top: 90px;
 }
 
 .dropdown ul {
@@ -67,7 +72,7 @@ a {
   transition: all 0.5s ease-in-out;
   visibility: visible;
   opacity: 1;
-  top: 20px; /* Adjust the top position to show the dropdown below the item */
+  top: 90px; /* Adjust the top position to show the dropdown below the item */
   left: 0; /* Adjust the left position to align with the item */
 }
 
@@ -79,7 +84,7 @@ a {
 
 .item {
   position: relative; /* Add relative positioning to the item */
-  height: 50%;
+  height: 90px;
   display: flex;
   transition: all 2s ease-in-out;
   justify-content: center;
@@ -107,6 +112,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .item {
@@ -180,16 +186,16 @@ a {
 
 .services-container {
   position: absolute;
-  top: 20px; /* Adjust the top position to align with the navbar height */
-  left: 0;
+  top: 90px; /* Adjust the top position to align with the navbar height */
   padding: 30px;
   background-color: white;
   font-family: sans-serif;
+  /* box-shadow: 0px 0px 30px 30px rgba(187, 189, 191, 255); */
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   width: 100%; /* Add this to make the grid take the full width */
 }
@@ -207,7 +213,7 @@ a {
   flex-direction: column;
   width: max-content;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
 }
 
 .services-card ul li:hover {
@@ -341,6 +347,12 @@ a {
     size: 20px;
     color: white;
     margin: 4px;
+  }
+  .dropdown {
+    top: 40px;
+  }
+  .item:hover .dropdown {
+    top: 40px;
   }
 }
 

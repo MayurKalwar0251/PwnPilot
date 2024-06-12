@@ -16,6 +16,7 @@ const Footer = () => {
         </p>
         <MyCustomButton name={"Lets Work Together"} backgroundColor="black" />
       </div>
+      <div className="divider"></div>
       <div className="footer-container">
         <div className="footer-first">
           <div className="footer-first-left">
@@ -42,6 +43,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="divider"></div>
 
         <div className="footer-middle" data-aos="fade-up">
           <div className="middle-grid" data-aos="fade-up">
@@ -136,6 +138,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="divider"></div>
 
         <div className="footer-lower">
           <div className="lower-grid" data-aos="fade-up">
@@ -174,9 +177,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="divider"></div>
       <div className="footer-bottom">
-        <p>© 2024 | All Rights Reserved by</p>
-        <h3 className="company-name">PWNPilot Security Private Limited</h3>
+        <div className="bottom-left">
+          <p>© 2024 | All Rights Reserved by</p>
+          <p className="company-name">PWNPilot Security Private Limited</p>
+        </div>
+
+        <div className="bottom-right">Created By @name</div>
       </div>
     </footer>
   );

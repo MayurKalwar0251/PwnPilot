@@ -30,9 +30,9 @@ const Hero = () => {
       </div>
 
       <ReactSVG src={PatternHome} className="pattern" />
-      <ReactSVG src={StartHome} className="start" />
     </div>
   );
+  // <ReactSVG src={StartHome} className="start" />
 };
 
 export default Hero;

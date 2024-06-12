@@ -45,6 +45,10 @@
   color: var(--black-color);
 }
 
+.cyber-detail-icon {
+  margin: auto;
+}
+
 @media (max-width: 1300px) {
   .cyber-detail-container {
     padding: 30px 30px;

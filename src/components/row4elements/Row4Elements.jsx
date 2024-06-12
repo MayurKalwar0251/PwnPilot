@@ -19,7 +19,7 @@ const Row4Elements = () => {
               enableScrollSpy={true}
               scrollSpyOnce={true}
               start={0}
-              end={5620}
+              end={50}
               duration={1}
               className="count-no"
             />
@@ -38,7 +38,7 @@ const Row4Elements = () => {
               enableScrollSpy={true}
               scrollSpyOnce={true}
               start={0}
-              end={250}
+              end={30}
               duration={1}
               className="count-no"
             />
@@ -57,7 +57,7 @@ const Row4Elements = () => {
               enableScrollSpy={true}
               scrollSpyOnce={true}
               start={0}
-              end={760}
+              end={50}
               duration={1}
               className="count-no"
             />
