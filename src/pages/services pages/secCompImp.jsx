@@ -17,7 +17,7 @@ const SecCompImp = () => {
           { name: "Security Compliance Implementation", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

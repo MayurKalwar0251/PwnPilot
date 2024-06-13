@@ -13,6 +13,7 @@ import CollaboratingClosely from "../components/collaborating closely pink/Colla
 import WhoWeServe from "../components/who we serve/WhoWeServe";
 import LeadershipTeam from "../components/leadership team/LeadershipTeam";
 import EvolutionOfCyber from "../components/evolution of cyber/EvolutionOfCyber";
+import FaqComp from "../components/faq/Faq";
 
 const HomePage = () => {
   return (
@@ -28,7 +29,6 @@ const HomePage = () => {
       <WhoWeServe />
       <LeadershipTeam />
       <EvolutionOfCyber />
-      <Footer />
     </div>
   );
 };

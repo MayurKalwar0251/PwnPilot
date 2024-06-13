@@ -17,7 +17,7 @@ const RegCompAud = () => {
           { name: "Regulatory Compliance Audit", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

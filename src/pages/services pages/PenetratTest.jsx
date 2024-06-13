@@ -17,7 +17,7 @@ const PenetratTest = () => {
           { name: " Penetration Testing", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

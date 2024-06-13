@@ -17,7 +17,7 @@ const DevSecOps = () => {
           { name: "DevSecOps", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

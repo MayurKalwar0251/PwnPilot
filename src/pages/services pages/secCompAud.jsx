@@ -17,7 +17,7 @@ const SecCompAud = () => {
           { name: "Security Compliance Audit", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

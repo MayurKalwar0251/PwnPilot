@@ -17,7 +17,7 @@ const WifiSec = () => {
           { name: "Wifi Security", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

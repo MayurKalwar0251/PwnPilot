@@ -43,6 +43,10 @@
   font-family: sans-serif;
 }
 
+.ico {
+  height: max-content;
+}
+
 @media (max-width: 1200px) {
   .container2 {
     height: 100vh;

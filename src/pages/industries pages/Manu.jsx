@@ -16,7 +16,7 @@ const Manu = () => {
           { name: "Manufacturing", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

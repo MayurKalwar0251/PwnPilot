@@ -16,7 +16,7 @@ const Gov = () => {
           { name: "Government", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

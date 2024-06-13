@@ -206,6 +206,7 @@ a {
   gap: 10px;
   color: black;
   width: max-content;
+  cursor: default;
 }
 
 .services-card ul {

@@ -22,7 +22,6 @@ const Company = () => {
       <CyberSecuritySImplify />
       <Row4Elements />
       <LeadershipTeam />
-      <Footer />
     </div>
   );
 };

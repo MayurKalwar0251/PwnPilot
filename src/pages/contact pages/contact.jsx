@@ -14,7 +14,7 @@ const ContactUs = () => {
           { name: "Contact Us", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

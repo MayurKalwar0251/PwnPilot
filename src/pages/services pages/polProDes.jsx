@@ -17,7 +17,7 @@ const PolProDesc = () => {
           { name: "Policy Procedure Designing", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

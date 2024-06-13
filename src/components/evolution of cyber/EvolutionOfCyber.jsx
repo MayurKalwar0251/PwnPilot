@@ -21,7 +21,7 @@ const EvolutionOfCyber = () => {
             </p>
             <p className="evolution-txt">
               Protect your organization from cyber threats and secure your
-              future with TalaKunchi Networks Private Limited's cybersecurity
+              future with TPWNPilot Security Private Limited cybersecurity
               solutions for the your sector. Contact us today to learn more
               about our services and schedule a consultation with one of our
               cybersecurity experts.
@@ -33,7 +33,7 @@ const EvolutionOfCyber = () => {
                 </div>
                 <div className="evolution-call">
                   Call Us Today
-                  <br /> +91921921212
+                  <br /> +917398243449
                 </div>
               </div>
               <div className="evolution-btn">
@@ -41,7 +41,7 @@ const EvolutionOfCyber = () => {
                   <img src={MessageIcon} alt="" />
                 </div>
                 <div className="evolution-call">
-                  Email Drop Us <br /> sales@gmail.com
+                  Email Drop Us <br /> info@pwnpilot.com
                 </div>
               </div>
             </div>

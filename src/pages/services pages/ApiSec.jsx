@@ -17,7 +17,7 @@ const ApiSec = () => {
           { name: "API Security ", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

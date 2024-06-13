@@ -17,7 +17,7 @@ const RegCompImp = () => {
           { name: "Regulatory Compliance Implementation", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Key25 = () => {
         ]}
       />
       <LeadershipTeam />
-      <Footer />
+ 
     </div>
   );
 };

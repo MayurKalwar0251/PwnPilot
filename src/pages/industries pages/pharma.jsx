@@ -16,7 +16,7 @@ const Pharmaceutical = () => {
           { name: "Pharmaceutical", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

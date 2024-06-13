@@ -8,7 +8,7 @@ const LeadershipTeam = () => {
   return (
     <div className="leader-container" data-aos="fade-up">
       <div className="leader-inner" data-aos="fade-up">
-        <div className="leader-head"> OUR LEADERSHIP</div>
+        <div className="leader-head"> Our Certified Members</div>
         <div className="leader-title">Leadership Team</div>
 
         <div className="leader-grid" data-aos="fade-up">

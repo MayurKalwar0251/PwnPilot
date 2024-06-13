@@ -16,7 +16,7 @@ const BFSI = () => {
           { name: "BFSI", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { ReactSVG } from "react-svg";
 
 import G from "../../assets/growth.svg";
 import Inter from "../../assets/international.svg";
+import Threat from "../../assets/threat-detection.png";
 
 const Assesments = () => {
   return (
@@ -24,7 +25,7 @@ const Assesments = () => {
       </div>
       <div className="box" data-aos="fade-up">
         <div className="icon">
-          <ReactSVG src={Inter} className="ico" />
+          <img src={Threat} className="ico" />
         </div>
         <div className="txt">
           <p className="head">Threat Monitoring</p>

@@ -17,7 +17,7 @@ const VulnerAsses = () => {
           { name: "Vulnerability Assessment", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

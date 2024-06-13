@@ -17,7 +17,7 @@ const NisTGui = () => {
           { name: "NIST Guidelines", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Tech = () => {
           { name: "Technology", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

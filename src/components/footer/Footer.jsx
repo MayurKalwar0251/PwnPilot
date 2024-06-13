@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../assets/Logo.png";
 import MyCustomButton from "../button/CommonButton";
 import { Link } from "react-router-dom";
 
@@ -50,9 +49,8 @@ const Footer = () => {
             <div className="footer-section" data-aos="fade-up">
               <h3>Working Time</h3>
               <div className="working-card">
-                <p className="card-txt">Mon - Sat / 09am : 07pm</p>
-                <p className="card-txt">Mon - Sat / 09am : 07pm</p>
-                <p className="card-txt">Sunday Close</p>
+                <p className="card-txt"> 10am : 10pm IST</p>
+                <p className="card-txt">All 7 days</p>
               </div>
             </div>
             <div className="footer-section" data-aos="fade-up">
@@ -145,13 +143,13 @@ const Footer = () => {
             <div className="footer-section-lower" data-aos="fade-up">
               <h3>Dombivli Office:</h3>
               <p>
-                606 - 608, B-Wing, 6th Floor,
+                Mayur Vihar
                 <br />
-                Navare Plaza, Station Rd,
+                New Delhi
                 <br />
-                Ramnagar, Dombivli East
+                Delhi
                 <br />
-                421201
+                110091
               </p>
             </div>
             <div className="footer-section-lower" data-aos="fade-up">
@@ -166,13 +164,12 @@ const Footer = () => {
             </div>
             <div className="footer-section-lower" data-aos="fade-up">
               <h3>Call Us Toll Free:</h3>
-              <p>For Sales: +91 91 670 30335</p>
-              <p>For HR: +91 90 046 04570</p>
+              <p>For Sales: +91 90158 11818 </p>
+              <p>For HR: +91 73982 43449 </p>
             </div>
             <div className="footer-section-lower" data-aos="fade-up">
               <h3>Email Us:</h3>
-              <p>sales@talakunchi.com</p>
-              <p>careers@talakunchi.com</p>
+              <p>info@pwnpilot.com </p>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const RishAssAt = () => {
           { name: "Risk Assessment and Treatment", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

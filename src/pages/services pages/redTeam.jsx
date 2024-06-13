@@ -17,7 +17,7 @@ const RedTeam = () => {
           { name: "Red Teaming", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

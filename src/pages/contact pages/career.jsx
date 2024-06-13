@@ -15,7 +15,7 @@ const Career = () => {
         ]}
       />
       <LeadershipTeam />
-      <Footer />
+ 
     </div>
   );
 };

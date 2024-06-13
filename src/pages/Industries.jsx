@@ -17,7 +17,7 @@ const Industries = () => {
         ]}
       />
       <EvolutionOfCyber />
-      <Footer />
+ 
     </div>
   );
 };

@@ -37,6 +37,8 @@ import Leadership from "./pages/contact pages/leadership";
 import ContactUs from "./pages/contact pages/contact";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from "./components/footer/Footer";
+import Faq from "./components/faq/Faq";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -99,6 +101,8 @@ function App() {
           <Route path="/key25" element={<Key25 />} />
           <Route path="/leadership" element={<Leadership />} />
         </Routes>
+        <Faq />
+        <Footer />
       </BrowserRouter>
     </div>
   );

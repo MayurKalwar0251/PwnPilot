@@ -17,7 +17,7 @@ const MobApp = () => {
           { name: "Mobile Application", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

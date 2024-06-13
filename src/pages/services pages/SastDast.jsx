@@ -17,7 +17,7 @@ const SastDast = () => {
           { name: "SAST and DAST Scanning", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };

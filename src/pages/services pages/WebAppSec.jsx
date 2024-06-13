@@ -17,7 +17,7 @@ const WebAppSec = () => {
           { name: "Web Application Security", path: "#" },
         ]}
       />
-      <Footer />
+ 
     </div>
   );
 };
