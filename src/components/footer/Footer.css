@@ -203,6 +203,17 @@
   font-size: 16px;
 }
 
+.coders-logo {
+  width: 60px;
+  height: 30px;
+  object-fit: contain;
+}
+.bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 @media (max-width: 1200px) {
   .footer-middle {
     padding-inline: 150px;

@@ -19,7 +19,9 @@ const LeadershipTeam = () => {
             </div>
             <div className="leader-card-down">
               <p className="name">Sonu Kumar Thakur</p>
-              <p className="role">CO FOUNDER (CEH, AZ900) 5 year Experience</p>
+              <p className="role">
+                5+ year Experience, (CEH, AZ900) Certified{" "}
+              </p>
               <p className="role">Contact No : +91 90158 11818</p>
 
               <p className="card-icon">
@@ -42,8 +44,7 @@ const LeadershipTeam = () => {
             <div className="leader-card-down">
               <p className="name">Abhishek Kumar Singh </p>
               <p className="role">
-                Ethical Hacker, Penetration Tester (VAPT), Soc Analyst <br /> 2
-                year Experience
+                2+ year Experience, CEH, Penetration Tester(VAPT), Soc Analyst
               </p>
               <p className="role">Contact No : +91 73982 43449</p>
               <p className="card-icon">

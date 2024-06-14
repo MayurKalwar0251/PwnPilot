@@ -89,18 +89,34 @@ const NavbarContact = () => {
           <div className="left2">
             <p className="contact-heading">Follow On:</p>
             <ul>
-              <li className="contact-item">
-                <FaFacebookF className="contact-icon" />
-              </li>
-              <li className="contact-item">
-                <FaInstagram className="contact-icon" />
-              </li>
-              <li className="contact-item">
-                <FaLinkedin className="contact-icon" />
-              </li>
-              <li className="contact-item">
-                <FaDiscord className="contact-icon" />
-              </li>
+              <Link
+                to={
+                  "https://www.facebook.com/profile.php?id=100092671180596&mibextid=ZbWKwL"
+                }
+              >
+                <li className="contact-item">
+                  <FaFacebookF className="contact-icon" />
+                </li>
+              </Link>
+              <Link
+                to={
+                  "https://www.instagram.com/pwnpilot?igsh=MTk0NDI4NGl5b2xyaQ=="
+                }
+              >
+                <li className="contact-item">
+                  <FaInstagram className="contact-icon" />
+                </li>
+              </Link>
+              <Link to={"https://www.linkedin.com/company/pwnpilot/"}>
+                <li className="contact-item">
+                  <FaLinkedin className="contact-icon" />
+                </li>
+              </Link>
+              <Link to={"https://discord.com/invite/JeyxxTtY"}>
+                <li className="contact-item">
+                  <FaDiscord className="contact-icon" />
+                </li>
+              </Link>
             </ul>
           </div>
 

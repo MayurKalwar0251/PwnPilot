@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import MyCustomButton from "../button/CommonButton";
+import Coders from "../../assets/coders.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -149,7 +150,9 @@ const Footer = () => {
           <p className="company-name">PwnPilot Security Private Limited</p>
         </div>
 
-        <div className="bottom-right">Made by @codesfortifytechnologies</div>
+        <div className="bottom-right">
+          Made by @codesfortifytechnologies <img src={Coders} className="coders-logo" alt="Logo" />
+        </div>
       </div>
     </footer>
   );
