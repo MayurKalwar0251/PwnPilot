@@ -23,6 +23,7 @@
   gap: 25px;
 
   box-shadow: 0px 0px 51px 12px rgb(248, 249, 250);
+  justify-content: space-evenly;
 }
 
 .cyber-detail-head {
@@ -47,6 +48,13 @@
 
 .cyber-detail-icon {
   margin: auto;
+  height: 80px;
+  box-sizing: border-box;
+  bottom: 0;
+}
+
+.cyber-detail-icon img {
+  height: 80px;
 }
 
 @media (max-width: 1300px) {

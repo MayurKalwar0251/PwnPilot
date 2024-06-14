@@ -27,7 +27,7 @@
 
 .leader-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -88,7 +88,27 @@
   padding: 20px 10px;
   width: 100%;
   gap: 20px;
-  background-color: rgb(237, 95, 109);
+  background-color: rgb(131, 132, 145, 0.6);
+}
+
+.card-icon {
+  display: flex;
+  padding: 2px;
+  height: 20px;
+  gap: 30px;
+}
+
+.card-icon img {
+  width: 20px;
+  object-fit: fill;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.card-icon img:hover {
+  width: 20px;
+  object-fit: fill;
+  background-color: white;
+  border-radius: 30%;
 }
 
 @media (max-width: 1000px) {

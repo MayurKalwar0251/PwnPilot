@@ -1,36 +1,26 @@
 import React from "react";
 import "./cybersecurity.css";
 
-import Company1 from "../../assets/our-company-1.png";
-import Company2 from "../../assets/our-company-2.png";
 import { FaStar } from "react-icons/fa6";
 import CountUp from "react-countup";
+import TopLeft from "../../assets/top-left.png";
+import TopRight from "../../assets/top-right.png";
+import DownRed from "../../assets/down-red.png";
 
 const CyberSecuritySImplify = () => {
   return (
     <div className="cyber-container">
       <div className="cyber-left">
-        <div>
+        <div className="cyber-left-container">
           <div className="left-up">
-            <img src={Company1} alt="Company" />
+            <img src={TopLeft} alt="Company" />
           </div>
-          <div className="left-down">
-            <p className="no">
-              <CountUp
-                enableScrollSpy={true}
-                scrollSpyOnce={true}
-                start={0}
-                end={23}
-                duration={1}
-                className="count-txt"
-              />
-              +
-            </p>
-            <p>Years Experience</p>
+          <div className="left-down-img">
+            <img src={DownRed} alt="Hacker" srcset="" />
           </div>
         </div>
         <div className="left-right">
-          <img src={Company2} alt="Company" />
+          <img src={TopRight} alt="Company" />
         </div>
       </div>
       <div className="cyber-right">

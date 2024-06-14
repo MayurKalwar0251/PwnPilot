@@ -5,6 +5,8 @@ import "./navbar2.css";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+import Discord from "../../assets/discord.png";
 import Cancel from "../../assets/multiply.png";
 import MyCustomButton from "../button/CommonButton";
 import { Link } from "react-router-dom";
@@ -20,6 +22,7 @@ const NavbarContact = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const [showServices, setShowServices] = useState(false);
+  const [showInnerServices, setShowInnerServices] = useState("");
 
   useEffect(() => {
     const handleResize = () => {
@@ -77,6 +80,9 @@ const NavbarContact = () => {
   const handleServices = () => {
     setShowServices(!showServices);
   };
+  const handleInnerServices = (ele) => {
+    setShowInnerServices(ele);
+  };
   return (
     <div className="nav-con">
       <div className="contact">
@@ -93,6 +99,9 @@ const NavbarContact = () => {
               <li className="contact-item">
                 <FaLinkedin className="contact-icon" />
               </li>
+              <li className="contact-item">
+                <FaDiscord className="contact-icon" />
+              </li>
             </ul>
           </div>
 
@@ -101,20 +110,20 @@ const NavbarContact = () => {
               <li>
                 <IoIosCall className="contact-icon" />
                 <p>For Sales</p>
-                <p>+99999999</p>
+                <p>+91 90158 11818</p>
               </li>
               <li>
                 <AiOutlineMail className="contact-icon" />
-                <p>sales@gmail.com</p>
+                <p>info@pwnpilot.com</p>
               </li>
               <li>
                 <IoIosCall className="contact-icon" />
-                <p>For HR</p>
-                <p>+99999999</p>
+                <p>For Enquiry</p>
+                <p>+91 7398243449</p>
               </li>
               <li>
                 <AiOutlineMail className="contact-icon" />
-                <p>career@gmail.com</p>
+                <p>pwnpilot@gmail.com</p>
               </li>
             </ul>
           </div>
@@ -169,49 +178,95 @@ const NavbarContact = () => {
                     <div className="services-container">
                       <div className="services-grid">
                         <div className="services-card">
-                          <h3 className="card-header">Security Assesment</h3>
-                          <ul>
-                            <Link to={"/web-app-sec"}>
-                              <li>Web Application Security</li>
-                            </Link>
-                            <Link to={"/sast-dast"}>
-                              <li>SAST and DAST Scanning</li>
-                            </Link>
-                            <Link to={"/api-sec"}>
-                              <li>API Security</li>
-                            </Link>
-                            <Link to={"/mob-app"}>
-                              <li>Mobile Application</li>
-                            </Link>
-                            <Link to={"/penetrat-test"}>
-                              <li>Penetration Testing</li>
-                            </Link>
-                            <Link to={"/vulner-asses"}>
-                              <li>Vulnerability Assessment</li>
-                            </Link>
-                            <Link to={"/wifi-sec"}>
-                              <li>Wifi Security</li>
-                            </Link>
-                          </ul>
-                        </div>
-                        <div className="services-card">
-                          <h3 className="card-header">Security Consulting</h3>
-                          <ul>
-                            <Link to={"/reg-comp-imp"}>
-                              <li>Regulatory Compliance Implementation</li>
-                            </Link>
-                            <Link to={"/sec-comp-imp"}>
-                              <li>Security Compliance Implementation</li>
-                            </Link>
-                            <Link to={"/pol-proc-des"}>
-                              <li>Policy Procedure Designing</li>
-                            </Link>
-                            <Link to={"/nist-gui"}>
-                              <li>NIST Guidelines</li>
-                            </Link>
-                            <Link to={"/risk-ass"}>
-                              <li>Risk Assessment and Treatment</li>
-                            </Link>
+                          <h3 className="card-header">
+                            Vulnerability Assessment &amp; Penetration Testing
+                          </h3>
+                          <ul className="outer-ul">
+                            <div
+                              onMouseEnter={() => {
+                                handleInnerServices("vul");
+                              }}
+                              onMouseLeave={() => {
+                                handleInnerServices("");
+                              }}
+                              className="inner-div"
+                            >
+                              <li className="inner-item">
+                                Vulnerability Assessment
+                              </li>
+
+                              {showInnerServices == "vul" && (
+                                <ul className="inner-ul">
+                                  <li>Network Vulnerability Assessment</li>
+                                  <li>Host-based Vulnerability Assessment</li>
+                                  <li>Application Vulnerability Assessmen</li>
+                                  <li>Database Vulnerability Assessment</li>
+                                </ul>
+                              )}
+                            </div>
+                            <div
+                              onMouseEnter={() => {
+                                handleInnerServices("penet");
+                              }}
+                              onMouseLeave={() => {
+                                handleInnerServices("");
+                              }}
+                              className="inner-div"
+                            >
+                              <li className="inner-item">
+                                Penetration Testing
+                              </li>
+                              {showInnerServices == "penet" && (
+                                <ul>
+                                  <li>Network Penetration Testing</li>
+                                  <li>Web Application Penetration Testing</li>
+                                  <li>
+                                    Mobile Application Penetration Testing
+                                  </li>
+                                  <li>Wireless Network Penetration Testing</li>
+                                  <li>Social Engineering Testing</li>
+                                  <li>Physical Penetration Testing</li>
+                                  <li>Cloud Penetration Testing</li>
+                                  <li>oT Penetration Testing</li>
+                                </ul>
+                              )}
+                            </div>
+                            <div
+                              onMouseEnter={() => {
+                                handleInnerServices("hybrid");
+                              }}
+                              onMouseLeave={() => {
+                                handleInnerServices("");
+                              }}
+                              className="inner-div"
+                            >
+                              <li className="inner-item">Hybrid Approach</li>
+                              {showInnerServices == "hybrid" && (
+                                <ul>
+                                  <li>Internal and External Assessments</li>
+                                  <li>Continuous Monitoring and Testing</li>
+                                </ul>
+                              )}
+                            </div>
+                            <div
+                              onMouseEnter={() => {
+                                handleInnerServices("auto");
+                              }}
+                              onMouseLeave={() => {
+                                handleInnerServices("");
+                              }}
+                              className="inner-div"
+                            >
+                              <li className="inner-item">
+                                Automated vs. Manual Testing
+                              </li>
+                              {showInnerServices == "auto" && (
+                                <ul>
+                                  <li>Automated Testing</li>
+                                  <li>Manual Testing</li>
+                                </ul>
+                              )}
+                            </div>
                           </ul>
                         </div>
                         <div className="services-card">
@@ -226,24 +281,6 @@ const NavbarContact = () => {
                           </ul>
                         </div>
                       </div>
-                    </div>
-                  )}
-                </div>
-              </Link>
-              <Link to={"/products"}>
-                <div
-                  className="item"
-                  onMouseEnter={() => handleDropdownToggle("Products")}
-                  onMouseLeave={handleMouseLeaveItem}
-                >
-                  <p>Products</p>
-                  {showDropdown && activeDropdown === "Products" && (
-                    <div className="dropdown">
-                      <ul>
-                        <Link to={"/products"}>
-                          <li>Squad1</li>
-                        </Link>
-                      </ul>
                     </div>
                   )}
                 </div>

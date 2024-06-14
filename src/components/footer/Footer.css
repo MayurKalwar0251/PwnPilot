@@ -10,6 +10,7 @@
   height: auto;
   color: white;
   font-family: sans-serif;
+  cursor: default;
 }
 
 .footer-top {
@@ -157,15 +158,15 @@
 
 .lower-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 }
 
 .footer-section-lower {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: max-content;
+  align-items: center;
 }
 
 .footer-section h3 {

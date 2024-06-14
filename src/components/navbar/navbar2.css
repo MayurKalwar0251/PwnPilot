@@ -4,6 +4,7 @@
   z-index: 100;
   background-color: white;
   transition: top 0.3s ease-in-out;
+  font-family: sans-serif;
 }
 
 .dark-navbar {
@@ -188,9 +189,10 @@ a {
   position: absolute;
   top: 90px; /* Adjust the top position to align with the navbar height */
   padding: 30px;
-  background-color: white;
   font-family: sans-serif;
   /* box-shadow: 0px 0px 30px 30px rgba(187, 189, 191, 255); */
+  background-color: #808080cc;
+  color: white;
 }
 
 .services-grid {
@@ -204,7 +206,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: black;
   width: max-content;
   cursor: default;
 }
@@ -219,12 +220,34 @@ a {
 
 .services-card ul li:hover {
   color: var(--primary-color);
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
 }
 .services-card ul li {
-  color: black;
+  color: white;
   transition: all 0.3s ease-in-out;
   padding: 5px;
+}
+
+.inner-div {
+  display: flex;
+  align-items: flex-start;
+  background-color: transparent !important;
+}
+.inner-div:hover {
+  background-color: transparent !important;
+}
+
+.services-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.outer-ul {
+  color: var(--secondary-color) !important;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1200px) {

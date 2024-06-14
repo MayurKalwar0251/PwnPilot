@@ -40,7 +40,7 @@ const Assesments = () => {
           <ReactSVG src={Inter} className="ico" />
         </div>
         <div className="txt">
-          <p className="head">Compliance Audit</p>
+          <p className="head">SOC Analyst</p>
           <p>
             We assess an organization's adherence to regulatory requirements and
             industry standards regarding data protection and cybersecurity.

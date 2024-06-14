@@ -1,11 +1,9 @@
 import React from "react";
 import "./cyberdetail4.css";
-import Inter from "../../assets/international.svg";
-import { ReactSVG } from "react-svg";
-import RedTeam from "../../assets/hacker.png";
-import DevOps from "../../assets/devops.png";
-import SocialEngi from "../../assets/community.png";
-import AttackSImu from "../../assets/virtual-assistant.png";
+import RedTeam from "../../assets/red-team.png";
+import BlueTeam from "../../assets/blue-team.png";
+import SocialEngi from "../../assets/social.png";
+import AttackSImu from "../../assets/ddo.png";
 
 const CyberDetail4 = () => {
   return (
@@ -23,14 +21,14 @@ const CyberDetail4 = () => {
           </div>
         </div>
         <div className="cyber-detail-card" data-aos="fade-up">
-          <div className="cyber-detail-head">DevSecOps</div>
+          <div className="cyber-detail-head">Blue Teaming</div>
           <div className="cyber-detail-txt">
-            x Strategic security assessment through simulated attacks, enabling
-            organizations to identify weaknesses and enhance defenses against
-            potential threats.
+            Starts their defensive plan by identifying the critical assets,
+            document the importance of these assets to the business and what
+            impact the absence of these assets will have.
           </div>
           <div className="cyber-detail-icon">
-            <img src={DevOps} className="ico" />
+            <img src={BlueTeam} className="ico" />
           </div>
         </div>
         <div className="cyber-detail-card" data-aos="fade-up">

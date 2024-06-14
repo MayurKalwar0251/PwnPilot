@@ -26,7 +26,6 @@ const ServicesPage = () => {
       <Assesments />
       <Row4Elements />
       <EvolutionOfCyber />
-      <CollaboratingClosely />
     </div>
   );
 };

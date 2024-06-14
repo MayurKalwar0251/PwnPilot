@@ -19,20 +19,24 @@
   gap: 30px;
 }
 
-.cyber-left .left-down {
-  margin-top: 15px;
-  height: 200px;
-  background-color: var(--primary-color);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-
+.cyber-left-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  justify-content: space-evenly;
-  color: white;
-  font-size: 22px;
   align-items: center;
+  gap: 10px;
+}
+
+.left-up {
+  width: 100%;
+}
+
+.cyber-left .left-down-img {
+  margin: auto;
+  margin-top: 15px;
+  /* height: 200px; */
+  width: 70%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .cyber-left .left-down .no {
@@ -47,8 +51,7 @@
 }
 
 .cyber-left .left-right img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 15px;
 }
 
 .cyber-right {
@@ -135,6 +138,32 @@
   font-size: 60px;
 }
 
+.cyber-left img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.cyber-left img:hover {
+  transform: scale(1.1);
+}
+
+.cyber-left .left-down-img {
+  margin: auto;
+  margin-top: 15px;
+  width: 80%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cyber-left .left-right img {
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cyber-left .left-right img:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 1400px) {
   img {
     width: 40%;
@@ -204,6 +233,10 @@
     height: 30%;
     gap: 10px;
   }
+
+  .cyber-left .left-down-img {
+    width: 90%;
+  }
 }
 
 @media (max-width: 750px) {
@@ -213,6 +246,9 @@
   .cyber-left {
     height: 35%;
     align-items: center;
+
+    /* change if in row */
+    flex-direction: column;
   }
 
   .cyber-left .left-down p {
@@ -267,6 +303,20 @@
   .cyber-right .detail .det p {
     letter-spacing: 0px;
     line-height: 20px;
+  }
+
+  .cyber-left .left-down-img {
+    width: 80%;
+  }
+
+  .cyber-left .left-right {
+    height: 100%;
+    width: 100%;
+  }
+  .cyber-left .left-right img {
+    box-shadow: none;
+    object-fit: cover;
+    height: 100%;
   }
 }
 

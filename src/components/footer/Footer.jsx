@@ -44,73 +44,54 @@ const Footer = () => {
         </div>
         <div className="divider"></div>
 
-        <div className="footer-middle" data-aos="fade-up">
+        <div className="footer-middle">
           <div className="middle-grid" data-aos="fade-up">
             <div className="footer-section" data-aos="fade-up">
               <h3>Working Time</h3>
               <div className="working-card">
-                <p className="card-txt"> 10am : 10pm IST</p>
+                <p className="card-txt"> 9am : 6pm IST</p>
                 <p className="card-txt">All 7 days</p>
+                <p className="card-txt">24 Hours Monitoring</p>
               </div>
             </div>
             <div className="footer-section" data-aos="fade-up">
               <h3>Our Services</h3>
               <ul>
                 <Link to={"/web-app-sec"}>
-                  <li>Web Application Security</li>
+                  <li>Network Penetration Testing</li>
                 </Link>
-                <Link to={"/sast-dast"}>
-                  <li>SAST and DAST Scanning</li>
-                </Link>
-                <Link to={"/api-sec"}>
-                  <li>API Security</li>
+                <Link to={"/web-app-sec"}>
+                  <li>Web Application Security Testing</li>
                 </Link>
                 <Link to={"/mob-app"}>
-                  <li>Mobile Application</li>
+                  <li>Mobile Application Penetration Testing</li>
                 </Link>
-                <Link to={"/penetrat-test"}>
-                  <li>Penetration Testing</li>
-                </Link>
-                <Link to={"/vulner-asses"}>
-                  <li>Vulnerability Assessment</li>
+                <Link to={"/api-sec"}>
+                  <li>API Security Testing</li>
                 </Link>
                 <Link to={"/wifi-sec"}>
-                  <li>Wifi Security</li>
+                  <li>Wifiless Penetration Testing</li>
+                </Link>
+                <Link to={"/wifi-sec"}>
+                  <li>OT And IOT Penetration Testing</li>
+                </Link>
+                <Link to={"/wifi-sec"}>
+                  <li>Cloud Penetration Testing</li>
                 </Link>
               </ul>
             </div>
             <div className="footer-section" data-aos="fade-up">
-              <h3>Our Services</h3>
+              <h3>Advanced Services</h3>
               <ul>
-                <Link to={"/reg-comp-imp"}>
-                  <li>Regulatory Compliance Implementation</li>
-                </Link>
-                <Link to={"/sec-comp-imp"}>
-                  <li>Security Compliance Implementation</li>
-                </Link>
-                <Link to={"/pol-proc-des"}>
-                  <li>Policy Procedure Designing</li>
-                </Link>
-                <Link to={"/nist-gui"}>
-                  <li>NIST Guidelines</li>
-                </Link>
-                <Link to={"/risk-ass"}>
-                  <li>Risk Assessment and Treatment</li>
-                </Link>
-                <Link to={"/reg-comp-aud"}>
-                  <li>Regulatory Compliance Audit</li>
-                </Link>
-                <Link to={"/sec-comp-aud"}>
-                  <li>Security Compliance Audit</li>
-                </Link>
-                <Link to={"/red-team"}>
+                <Link to={"/web-app-sec"}>
                   <li>Red Teaming</li>
                 </Link>
-                <Link to={"/dev-sec-ops"}>
-                  <li>DevSecOps</li>
+                <Link to={"/web-app-sec"}>
+                  <li>Blue Teaming</li>
                 </Link>
               </ul>
             </div>
+
             <div className="footer-section" data-aos="fade-up">
               <h3>Industries We Serve</h3>
               <ul>
@@ -141,35 +122,22 @@ const Footer = () => {
         <div className="footer-lower">
           <div className="lower-grid" data-aos="fade-up">
             <div className="footer-section-lower" data-aos="fade-up">
-              <h3>Dombivli Office:</h3>
+              <h3>Official Address:</h3>
               <p>
-                Mayur Vihar
+                Mayur Vihar, New Delhi
                 <br />
-                New Delhi
-                <br />
-                Delhi
-                <br />
-                110091
-              </p>
-            </div>
-            <div className="footer-section-lower" data-aos="fade-up">
-              <h3>Malad Office:</h3>
-              <p>
-                Quantum Tower, Kalpataru
-                <br />
-                Plaza, 9th floor, 901, Chincholi <br /> Bunder Road, Nadiyawala
-                <br />
-                Colony 2, Malad West <br /> Mumbai - 400 064
+                Delhi, 110091
               </p>
             </div>
             <div className="footer-section-lower" data-aos="fade-up">
               <h3>Call Us Toll Free:</h3>
               <p>For Sales: +91 90158 11818 </p>
-              <p>For HR: +91 73982 43449 </p>
+              <p>For Enquiry: +91 73982 43449 </p>
             </div>
             <div className="footer-section-lower" data-aos="fade-up">
               <h3>Email Us:</h3>
               <p>info@pwnpilot.com </p>
+              <p>pwnpilot@gmail.com </p>
             </div>
           </div>
         </div>
@@ -178,10 +146,10 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="bottom-left">
           <p>© 2024 | All Rights Reserved by</p>
-          <p className="company-name">PWNPilot Security Private Limited</p>
+          <p className="company-name">PwnPilot Security Private Limited</p>
         </div>
 
-        <div className="bottom-right">Created By @name</div>
+        <div className="bottom-right">Made by @codesfortifytechnologies</div>
       </div>
     </footer>
   );
