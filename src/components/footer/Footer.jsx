@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="footer-section" data-aos="fade-up">
               <h3>Working Time</h3>
               <div className="working-card">
-                <p className="card-txt"> 9am : 6pm IST</p>
+                <p className="card-txt"> 10am : 10pm IST</p>
                 <p className="card-txt">All 7 days</p>
                 <p className="card-txt">24 Hours Monitoring</p>
               </div>

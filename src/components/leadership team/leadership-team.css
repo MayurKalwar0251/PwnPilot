@@ -77,6 +77,7 @@
 .role {
   font-size: 16px;
   opacity: 0.8;
+  text-align: center;
 }
 
 .leader-card-down {
@@ -94,18 +95,17 @@
 .card-icon {
   display: flex;
   padding: 2px;
-  height: 20px;
+  height: 30px;
   gap: 30px;
 }
 
 .card-icon img {
-  width: 20px;
+  width: 30px;
   object-fit: fill;
   padding: 10px;
   transition: all 0.3s ease-in-out;
 }
 .card-icon img:hover {
-  width: 20px;
   object-fit: fill;
   background-color: white;
   border-radius: 30%;

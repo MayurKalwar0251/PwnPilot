@@ -21,7 +21,7 @@ const EvolutionOfCyber = () => {
             </p>
             <p className="evolution-txt">
               Protect your organization from cyber threats and secure your
-              future with TPWNPilot Security Private Limited cybersecurity
+              future with PwnPilot Security Private Limited cybersecurity
               solutions for the your sector. Contact us today to learn more
               about our services and schedule a consultation with one of our
               cybersecurity experts.

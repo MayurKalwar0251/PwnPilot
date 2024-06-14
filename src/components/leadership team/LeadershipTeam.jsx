@@ -1,10 +1,7 @@
 import React from "react";
 import "./leadership-team.css";
-import Founder1 from "../../assets/founder1.webp";
-import Founder2 from "../../assets/founder2.webp";
-import Founder3 from "../../assets/founder3.webp";
-import Fb from "../../assets/fb.png";
-import Insta from "../../assets/insta.png";
+import Founder1 from "../../assets/owner.png";
+import Founder3 from "../../assets/manager.png";
 import Linkedin from "../../assets/linkedin.png";
 import { Link } from "react-router-dom";
 
@@ -22,7 +19,9 @@ const LeadershipTeam = () => {
             </div>
             <div className="leader-card-down">
               <p className="name">Sonu Kumar Thakur</p>
-              <p className="role">Cybersecurity Analyst at TechMahindra</p>
+              <p className="role">CO FOUNDER (CEH, AZ900) 5 year Experience</p>
+              <p className="role">Contact No : +91 90158 11818</p>
+
               <p className="card-icon">
                 <Link
                   to={
@@ -43,8 +42,10 @@ const LeadershipTeam = () => {
             <div className="leader-card-down">
               <p className="name">Abhishek Kumar Singh </p>
               <p className="role">
-                Ethical Hacker, Penetration Tester (VAPT), Soc Analyst
+                Ethical Hacker, Penetration Tester (VAPT), Soc Analyst <br /> 2
+                year Experience
               </p>
+              <p className="role">Contact No : +91 73982 43449</p>
               <p className="card-icon">
                 <Link
                   to={

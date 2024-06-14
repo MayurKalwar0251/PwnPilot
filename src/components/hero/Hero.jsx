@@ -12,7 +12,7 @@ const Hero = () => {
     <div className="hero-section">
       <div className="left">
         <span className="name">
-          Welcome To <span>PWNPilot Security Private Limited</span>
+          Welcome To <span>PwnPilot Security Private Limited</span>
         </span>
         <h2 className="heading">Cybersecurity Simplified</h2>
         <p className="txt">

@@ -6,7 +6,6 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
-import Discord from "../../assets/discord.png";
 import Cancel from "../../assets/multiply.png";
 import MyCustomButton from "../button/CommonButton";
 import { Link } from "react-router-dom";
@@ -180,103 +179,33 @@ const NavbarContact = () => {
                         <div className="services-card">
                           <h3 className="card-header">
                             Vulnerability Assessment &amp; Penetration Testing
+                            <ul className="inner-ul">
+                              <li>Network Penetration Testing</li>
+                              <li>Web Application Security Testing</li>
+                              <li>Mobile Application Penetration Testing</li>
+                              <li>API Security Testing</li>
+                              <li>Wifiless Penetration Testing</li>
+                              <li>OT And IOT Penetration Testing</li>
+                              <li>Cloud Penetration Testing</li>
+                            </ul>
                           </h3>
-                          <ul className="outer-ul">
-                            <div
-                              onMouseEnter={() => {
-                                handleInnerServices("vul");
-                              }}
-                              onMouseLeave={() => {
-                                handleInnerServices("");
-                              }}
-                              className="inner-div"
-                            >
-                              <li className="inner-item">
-                                Vulnerability Assessment
-                              </li>
-
-                              {showInnerServices == "vul" && (
-                                <ul className="inner-ul">
-                                  <li>Network Vulnerability Assessment</li>
-                                  <li>Host-based Vulnerability Assessment</li>
-                                  <li>Application Vulnerability Assessmen</li>
-                                  <li>Database Vulnerability Assessment</li>
-                                </ul>
-                              )}
-                            </div>
-                            <div
-                              onMouseEnter={() => {
-                                handleInnerServices("penet");
-                              }}
-                              onMouseLeave={() => {
-                                handleInnerServices("");
-                              }}
-                              className="inner-div"
-                            >
-                              <li className="inner-item">
-                                Penetration Testing
-                              </li>
-                              {showInnerServices == "penet" && (
-                                <ul>
-                                  <li>Network Penetration Testing</li>
-                                  <li>Web Application Penetration Testing</li>
-                                  <li>
-                                    Mobile Application Penetration Testing
-                                  </li>
-                                  <li>Wireless Network Penetration Testing</li>
-                                  <li>Social Engineering Testing</li>
-                                  <li>Physical Penetration Testing</li>
-                                  <li>Cloud Penetration Testing</li>
-                                  <li>oT Penetration Testing</li>
-                                </ul>
-                              )}
-                            </div>
-                            <div
-                              onMouseEnter={() => {
-                                handleInnerServices("hybrid");
-                              }}
-                              onMouseLeave={() => {
-                                handleInnerServices("");
-                              }}
-                              className="inner-div"
-                            >
-                              <li className="inner-item">Hybrid Approach</li>
-                              {showInnerServices == "hybrid" && (
-                                <ul>
-                                  <li>Internal and External Assessments</li>
-                                  <li>Continuous Monitoring and Testing</li>
-                                </ul>
-                              )}
-                            </div>
-                            <div
-                              onMouseEnter={() => {
-                                handleInnerServices("auto");
-                              }}
-                              onMouseLeave={() => {
-                                handleInnerServices("");
-                              }}
-                              className="inner-div"
-                            >
-                              <li className="inner-item">
-                                Automated vs. Manual Testing
-                              </li>
-                              {showInnerServices == "auto" && (
-                                <ul>
-                                  <li>Automated Testing</li>
-                                  <li>Manual Testing</li>
-                                </ul>
-                              )}
-                            </div>
-                          </ul>
                         </div>
                         <div className="services-card">
                           <h3 className="card-header">Advanced Services</h3>
-                          <ul>
-                            <Link to={"/red-team"}>
+                          <ul className="outer-ul">
+                            <Link to={"/red-team"} className="inner-div">
                               <li>Red Teaming</li>
+                              <ul className="inner-ul">
+                                <li>Internal Red Teaming</li>
+                                <li>External Red Teaming</li>
+                              </ul>
                             </Link>
-                            <Link to={"/dev-sec-ops"}>
-                              <li>DevSecOps</li>
+                            <Link to={"/dev-sec-ops"} className="inner-div">
+                              <li>Blue Teaming</li>
+                              <ul className="inner-ul">
+                                <li>Soc (Security Operation Center)</li>
+                                <li>Digital Forensic</li>
+                              </ul>
                             </Link>
                           </ul>
                         </div>
@@ -338,9 +267,6 @@ const NavbarContact = () => {
                         </Link>
                         <Link to={"cert-in"}>
                           <li>Cert-IN</li>
-                        </Link>
-                        <Link to={"key25"}>
-                          <li>Key-25sec</li>
                         </Link>
                         <Link to={"/career"}>
                           <li>Careers</li>

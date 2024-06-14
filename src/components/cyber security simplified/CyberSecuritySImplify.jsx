@@ -27,12 +27,12 @@ const CyberSecuritySImplify = () => {
         <div className="head">Know Our Company</div>
         <h3>Cyber Security Simplified</h3>
         <p className="txt">
-          PWNPilot Networks Private Limited is your trusted partner for
+          PwnPilot Networks Private Limited is your trusted partner for
           simplified cybersecurity solutions. With a focus on clarity and
           effectiveness, we streamline complex security measures to protect your
           digital assets. Our team of experts offers comprehensive services,
           from risk assessments to incident response, ensuring your organization
-          stays resilient in the face of evolving threats. At PWNPilot, we
+          stays resilient in the face of evolving threats. At PwnPilot, we
           prioritize simplicity without compromising on security, empowering you
           to navigate the digital landscape with confidence and peace of mind.
         </p>
