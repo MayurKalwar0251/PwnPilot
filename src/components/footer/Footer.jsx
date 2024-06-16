@@ -58,25 +58,25 @@ const Footer = () => {
             <div className="footer-section" data-aos="fade-up">
               <h3>Our Services</h3>
               <ul>
-                <Link to={"/web-app-sec"}>
+                <Link to={"/net-pen-test"}>
                   <li>Network Penetration Testing</li>
                 </Link>
                 <Link to={"/web-app-sec"}>
                   <li>Web Application Security Testing</li>
                 </Link>
-                <Link to={"/mob-app"}>
+                <Link to={"/mob-app-pen"}>
                   <li>Mobile Application Penetration Testing</li>
                 </Link>
                 <Link to={"/api-sec"}>
                   <li>API Security Testing</li>
                 </Link>
-                <Link to={"/wifi-sec"}>
+                <Link to={"/wire-pen-test"}>
                   <li>Wifiless Penetration Testing</li>
                 </Link>
-                <Link to={"/wifi-sec"}>
+                <Link to={"/ot-iot"}>
                   <li>OT And IOT Penetration Testing</li>
                 </Link>
-                <Link to={"/wifi-sec"}>
+                <Link to={"/cloud-pen"}>
                   <li>Cloud Penetration Testing</li>
                 </Link>
               </ul>
@@ -84,10 +84,10 @@ const Footer = () => {
             <div className="footer-section" data-aos="fade-up">
               <h3>Advanced Services</h3>
               <ul>
-                <Link to={"/web-app-sec"}>
+                <Link to={"/red-team"}>
                   <li>Red Teaming</li>
                 </Link>
-                <Link to={"/web-app-sec"}>
+                <Link to={"/blue-team"}>
                   <li>Blue Teaming</li>
                 </Link>
               </ul>
@@ -151,7 +151,8 @@ const Footer = () => {
         </div>
 
         <div className="bottom-right">
-          Made by @codesfortifytechnologies <img src={Coders} className="coders-logo" alt="Logo" />
+          Made by @codesfortifytechnologies{" "}
+          <img src={Coders} className="coders-logo" alt="Logo" />
         </div>
       </div>
     </footer>

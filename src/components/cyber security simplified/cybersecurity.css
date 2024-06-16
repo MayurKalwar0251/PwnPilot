@@ -11,6 +11,13 @@
   padding: 30px;
 }
 
+.star-icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+
 .cyber-left {
   width: 50%;
   padding-block: 20px;
@@ -48,10 +55,13 @@
 
 .cyber-left .left-right {
   margin-top: 50px;
+  height: auto;
 }
 
 .cyber-left .left-right img {
   border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
 }
 
 .cyber-right {

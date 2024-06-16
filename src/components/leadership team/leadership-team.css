@@ -100,7 +100,7 @@
 }
 
 .card-icon img {
-  width: 30px;
+  width: 50px;
   object-fit: fill;
   padding: 10px;
   transition: all 0.3s ease-in-out;

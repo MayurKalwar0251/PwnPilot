@@ -196,13 +196,27 @@ const NavbarContact = () => {
                           <h3 className="card-header">
                             Vulnerability Assessment &amp; Penetration Testing
                             <ul className="inner-ul">
-                              <li>Network Penetration Testing</li>
-                              <li>Web Application Security Testing</li>
-                              <li>Mobile Application Penetration Testing</li>
-                              <li>API Security Testing</li>
-                              <li>Wifiless Penetration Testing</li>
-                              <li>OT And IOT Penetration Testing</li>
-                              <li>Cloud Penetration Testing</li>
+                              <Link to={"/net-pen-test"}>
+                                <li>Network Penetration Testing</li>
+                              </Link>
+                              <Link to={"/web-app-sec"}>
+                                <li>Web Application Security Testing</li>
+                              </Link>
+                              <Link to={"/mob-app-pen"}>
+                                <li>Mobile Application Penetration Testing</li>
+                              </Link>
+                              <Link to={"/api-sec"}>
+                                <li>API Security Testing</li>
+                              </Link>
+                              <Link to={"/wire-pen-test"}>
+                                <li>Wifiless Penetration Testing</li>
+                              </Link>
+                              <Link to={"/ot-iot"}>
+                                <li>OT And IOT Penetration Testing</li>
+                              </Link>
+                              <Link to={"/cloud-pen"}>
+                                <li>Cloud Penetration Testing</li>
+                              </Link>
                             </ul>
                           </h3>
                         </div>
@@ -210,17 +224,30 @@ const NavbarContact = () => {
                           <h3 className="card-header">Advanced Services</h3>
                           <ul className="outer-ul">
                             <Link to={"/red-team"} className="inner-div">
-                              <li>Red Teaming</li>
+                              <Link to={"/red-team"}>
+                                <li>Red Teaming</li>
+                              </Link>
+
                               <ul className="inner-ul">
-                                <li>Internal Red Teaming</li>
-                                <li>External Red Teaming</li>
+                                <Link to={"/int-red-team"}>
+                                  <li>Internal Red Teaming</li>
+                                </Link>
+                                <Link to={"/ext-red-team"}>
+                                  <li>External Red Teaming</li>
+                                </Link>
                               </ul>
                             </Link>
                             <Link to={"/dev-sec-ops"} className="inner-div">
-                              <li>Blue Teaming</li>
+                              <Link to={"/blue-team"}>
+                                <li>Blue Teaming</li>
+                              </Link>
                               <ul className="inner-ul">
-                                <li>Soc (Security Operation Center)</li>
-                                <li>Digital Forensic</li>
+                                <Link to={"/soc"}>
+                                  <li>Soc (Security Operation Center)</li>
+                                </Link>
+                                <Link to={"/dig-foren"}>
+                                  <li>Digital Forensic</li>
+                                </Link>
                               </ul>
                             </Link>
                           </ul>

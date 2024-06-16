@@ -1,7 +1,6 @@
 import React from "react";
 import "./evolution-of-cyber.css";
 import backgroundImage from "../../assets/can-help-background.png"; // Update the path accordingly
-import Icon from "../../assets/cancel.png";
 import CallIcon from "../../assets/phone.png";
 import MessageIcon from "../../assets/message.png";
 import MyCustomButton from "../button/CommonButton.jsx";
@@ -60,6 +59,7 @@ const EvolutionOfCyber = () => {
                 <input type="text" className="input" placeholder="Subject" />
                 <textarea
                   rows={4}
+                  maxLength={300}
                   type="text"
                   className="input"
                   placeholder="Your Message"

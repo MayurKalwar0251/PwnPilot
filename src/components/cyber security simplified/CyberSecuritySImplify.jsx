@@ -60,7 +60,7 @@ const CyberSecuritySImplify = () => {
                 Boost your cybersecurity success with our established history of
                 delivering top-tier projects.
               </p>
-              <p>
+              <p className="star-icons">
                 <FaStar />
                 <FaStar />
                 <FaStar />
@@ -86,7 +86,7 @@ const CyberSecuritySImplify = () => {
                 Our satisfied customers stand as a testament to our commitment
                 to fortifying cybersecurity.
               </p>
-              <p>
+              <p className="star-icons">
                 <FaStar />
                 <FaStar />
                 <FaStar />

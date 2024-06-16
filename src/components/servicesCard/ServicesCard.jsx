@@ -1,90 +1,151 @@
-import Link from "react-router-dom";
 import React from "react";
-import { IoIosArrowForward } from "react-icons/io";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Img from "../../assets/blue-team.png";
 
 const ServicesCard = () => {
-  const products = [
-    {
-      title: "Coffee Shops",
-      description:
-        "Laila Saif Mutlaq Al-Otaibi has developed many coffee shops in Saudi arabia with our professional skilled staff.",
-      image: "/products/1.png",
-    },
-    {
-      title: "Shops",
-      description:
-        "Many shops & malls developed all over the the kingdom by amaze arabia contracting company",
-      image: "/products/2.png",
-    },
-    {
-      title: "Outlets",
-      description:
-        "Laila Saif Mutlaq Al-Otaibi has developed many outlets. Saudi Arabia with our skills and professional staff.",
-      image: "/products/3.png",
-    },
-  ];
-  return (
-    <div className=" pt-10 max-w-7xl flex flex-col m-2">
-      <h2 className="text-bold max-md:text-3xl max-sm:text-center md:text-5xl text-black font-[NeoSansPro-Medium]">
-        Products We Ship!
-      </h2>
-      <div className="md:mt-4 flex max-lg:flex-wrap   gap-[3vh] justify-center items-center ">
-        {products.map((product, id) => (
-          <div
-            key={id}
-            className="group relative max-lg:max-w-[19rem] bg-white hover:bg-blue-50 rounded-3xl border shadow-lg  overflow-hidden transition-transform transform hover:scale-105 p-5 md:mt-0 mt-10"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-          >
-            <div className="rounded-3xl hover:bg-blue-50">
-              <div className="relative aspect-h-1 aspect-w-1 w-full lg:aspect-none rounded-t-3xl group-hover:opacity-90   lg:h-80 bg-white rounded-lg shadow-md transition-transform transform hover:scale-105 cursor-pointer">
-                <img
-                  src={product.image}
-                  alt={product.image}
-                  className="h-52 w-full object-cover object-center lg:h-full lg:w-full max-h-full rounded-t-3xl"
-                />
-                <div data-aos="fade-up" className="absolute bottom-2 left-2">
-                  <a
-                    href="/products"
-                    className="bg-blue-600 p-2 px-6 text-gray-100 rounded-r-lg w-32 mt-6 flex items-center space-x-4 h-12"
-                  >
-                    <span>Explore</span>
-                  </a>
-                </div>
-              </div>
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    rows: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+    ],
+  };
 
-              <div className="mt-4 p-3 flex justify-center">
-                <div className="">
-                  <h3 className="text-sm font-semibold text-black">
-                    <Link
-                      href={"/products"}
-                      className="hover:underline text-black font-bold text-lg"
-                    >
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      {product.title}
-                    </Link>
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-500 line-clamp-3">
-                    {product.description}
-                  </p>
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "black",
+        }}
+        onClick={onClick}
+      ></div>
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "black",
+          fontSize: "40px",
+        }}
+        onClick={onClick}
+      ></div>
+    );
+  }
+
+  const truncateReview = (review) => {
+    const words = review.split(" ");
+    return words.length > 20 ? words.slice(0, 20).join(" ") + "..." : review;
+  };
+
+  return (
+    <div className="bg-[#14161b] pb-20">
+      <div className="w-3/4 m-auto py-20">
+        <div className="mt-20">
+          <Slider {...settings}>
+            {data.map((d) => (
+              <div
+                key={d.name}
+                className="bg-white h-auto text-black rounded-xl"
+              >
+                <div className="h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl">
+                  <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
                 </div>
-                <div className="flex items-center justify-center rounded-full hover:bg-white w-28 h-10 bg-blue-100 z-50 border text-center text-2xl">
-                  <IoIosArrowForward />
+
+                <div className="flex flex-col items-center justify-center gap-4 p-4">
+                  <p className="text-base text-center font-semibold">
+                    {d.name}
+                  </p>
+                  <p className="text-center text-sm">
+                    {truncateReview(d.review)}
+                  </p>
+                  <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">
+                    Read More
+                  </button>
                 </div>
               </div>
-            </div>
-          </div>
-        ))}
+            ))}
+          </Slider>
+        </div>
       </div>
-      {/* <a
-        className="text-blue-500 font-bold hover:underline text-end p-3 text-xl md:text-2xl"
-        href="/products"
-      >
-        <p>View All .....</p>
-      </a> */}
     </div>
   );
 };
+
+const data = [
+  {
+    name: "Network Penetration Testing",
+    img: Img,
+    review:
+      "Identify and mitigate vulnerabilities within your network infrastructure to defend against potential cyber threats and unauthorized access.",
+  },
+  {
+    name: "Web Application Security Testing",
+    img: Img,
+    review:
+      "Uncover and fix security flaws in web applications to protect against attacks like SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).",
+  },
+  {
+    img: Img,
+    name: "Mobile Application Penetration Testing",
+    review:
+      "Evaluate the security of mobile applications on various platforms to ensure data integrity, privacy, and protection against unauthorized access.",
+  },
+  {
+    img: Img,
+    name: "API Security Testing",
+    review:
+      "Ensure your APIs are secure by identifying vulnerabilities that could expose sensitive data or allow unauthorized operations.",
+  },
+  {
+    img: Img,
+    name: "Wireless Penetration Testing",
+    review:
+      "Assess the security of your wireless networks to identify weaknesses in encryption, authentication, and configuration settings.",
+  },
+  {
+    img: Img,
+    name: "OT And IoT Penetration Testing",
+    review:
+      "Evaluate the security of operational technology and Internet of Things devices to ensure they are resilient against cyber attacks and breaches.",
+  },
+  {
+    img: Img,
+    name: "Cloud Penetration Testing",
+    review:
+      "Examine the security of your cloud infrastructure to identify vulnerabilities and ensure compliance with industry best practices for cloud security.",
+  },
+];
 
 export default ServicesCard;
