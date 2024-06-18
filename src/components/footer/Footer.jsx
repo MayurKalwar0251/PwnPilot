@@ -153,7 +153,7 @@ const Footer = () => {
         </div>
 
         <div className="bottom-right">
-          Made by @codesfortifytechnologies{" "}
+          Made by CodersFortify Techno
           <img src={Coders} className="coders-logo" alt="Logo" />
         </div>
       </div>

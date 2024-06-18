@@ -9,7 +9,7 @@
 }
 
 .box {
-  height: 50%;
+  height: auto;
   display: flex;
   padding: 20px;
   justify-content: space-between;
