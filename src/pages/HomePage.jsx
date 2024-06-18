@@ -13,6 +13,7 @@ import WhoWeServe from "../components/who we serve/WhoWeServe";
 import LeadershipTeam from "../components/leadership team/LeadershipTeam";
 import EvolutionOfCyber from "../components/evolution of cyber/EvolutionOfCyber";
 import ServicesCard from "../components/servicesCard/ServicesCard";
+import Form from "../components/form/Form";
 
 const HomePage = () => {
   return (

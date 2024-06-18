@@ -14,7 +14,9 @@ const Footer = () => {
           <br />
           Digital Assets.
         </p>
-        <MyCustomButton name={"Lets Work Together"} backgroundColor="black" />
+        <Link to={"/lets-work-tog"}>
+          <MyCustomButton name={"Lets Work Together"} backgroundColor="black" />
+        </Link>
       </div>
       <div className="divider"></div>
       <div className="footer-container">

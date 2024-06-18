@@ -1,7 +1,12 @@
 import React, { useRef, useState } from "react";
 import "./commonbtn.css";
 
-function MyCustomButton({ name, backgroundColor = "red", color = "white" }) {
+function MyCustomButton({
+  name,
+  backgroundColor = "red",
+  color = "white",
+  onClicked = () => {},
+}) {
   const buttonRef = useRef(null);
   const rippleRef = useRef(null);
   const [hover, setHover] = useState(false);
@@ -21,6 +26,7 @@ function MyCustomButton({ name, backgroundColor = "red", color = "white" }) {
       onMouseLeave={handleMouseLeave}
       className="myButton"
       style={{ backgroundColor: backgroundColor, color: color }}
+      onClick={onClicked}
     >
       {name}
       <span

@@ -36,6 +36,8 @@ import IntRedTeam from "./pages/services pages/IntRedTeam";
 import ExtRedTeam from "./pages/services pages/ExtRedTeam";
 import Soc from "./pages/services pages/Soc";
 import DigForen from "./pages/services pages/DigForen";
+import LetsWorkTog from "./pages/LetsWorkTog";
+import GetAQoute from "./pages/GetAQoute";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -94,6 +96,9 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/key25" element={<Key25 />} />
           <Route path="/leadership" element={<Leadership />} />
+
+          <Route path="/lets-work-tog" element={<LetsWorkTog />} />
+          <Route path="/get-a-qoute" element={<GetAQoute />} />
         </Routes>
         <Faq />
         <Footer />

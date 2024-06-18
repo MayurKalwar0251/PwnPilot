@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import Cancel from "../../assets/multiply.png";
 import MyCustomButton from "../button/CommonButton";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { IoIosCall } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
@@ -324,11 +324,13 @@ const NavbarContact = () => {
               </Link>
 
               {!isOpen && (
-                <MyCustomButton
-                  name={"Get A Qoute"}
-                  backgroundColor="black"
-                  color="white"
-                />
+                <Link to={"/get-a-qoute"}>
+                  <MyCustomButton
+                    name={"Get A Qoute"}
+                    backgroundColor="black"
+                    color="white"
+                  />
+                </Link>
               )}
 
               {isOpen && (
