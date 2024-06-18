@@ -1,6 +1,7 @@
 import React from "react";
 import "./solution.css";
 import MyCustomButton from "../button/CommonButton";
+import { Link } from "react-router-dom";
 
 const SolutionOffer = () => {
   return (
@@ -23,7 +24,9 @@ const SolutionOffer = () => {
           protection for our clients' critical infrastructure and sensitive
           data.
         </div>
-        <MyCustomButton name={"View All Services"} />
+        <Link to={"/services"}>
+          <MyCustomButton name={"View All Services"} />
+        </Link>
       </div>
     </div>
   );

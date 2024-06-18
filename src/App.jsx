@@ -38,6 +38,7 @@ import Soc from "./pages/services-pages/Soc";
 import DigForen from "./pages/services-pages/DigForen";
 import LetsWorkTog from "./pages/LetsWorkTog";
 import GetAQoute from "./pages/GetAQoute";
+import NetPenTest from "./pages/services-pages/NetPenTest";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -68,7 +69,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/company" element={<Company />} />
 
-          <Route path="/net-pen-test" element={<ApiSec />} />
+          <Route path="/net-pen-test" element={<NetPenTest />} />
           <Route path="/web-app-sec" element={<WebAppSecu />} />
           <Route path="/mob-app-pen" element={<MobAppPen />} />
           <Route path="/api-sec" element={<ApiSec />} />

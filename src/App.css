@@ -25,3 +25,7 @@ a {
 .slick-dots li button:before {
   color: white !important;
 }
+
+body {
+  cursor: default;
+}

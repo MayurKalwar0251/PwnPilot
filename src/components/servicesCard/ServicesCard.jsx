@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Img from "../../assets/blue-team.png";
+import { Link } from "react-router-dom";
 
 const ServicesCard = () => {
   const settings = {
@@ -90,9 +91,11 @@ const ServicesCard = () => {
                   <p className="text-center text-sm">
                     {truncateReview(d.review)}
                   </p>
-                  <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">
-                    Read More
-                  </button>
+                  <Link to={d.link}>
+                    <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">
+                      Read More
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -107,6 +110,7 @@ const data = [
   {
     name: "Network Penetration Testing",
     img: Img,
+    link: "/net-pen-test",
     review:
       "Identify and mitigate vulnerabilities within your network infrastructure to defend against potential cyber threats and unauthorized access.",
   },
@@ -115,36 +119,42 @@ const data = [
     img: Img,
     review:
       "Uncover and fix security flaws in web applications to protect against attacks like SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).",
+    link: "/web-app-sec",
   },
   {
     img: Img,
     name: "Mobile Application Penetration Testing",
     review:
       "Evaluate the security of mobile applications on various platforms to ensure data integrity, privacy, and protection against unauthorized access.",
+    link: "/mob-app-pen",
   },
   {
     img: Img,
     name: "API Security Testing",
     review:
       "Ensure your APIs are secure by identifying vulnerabilities that could expose sensitive data or allow unauthorized operations.",
+    link: "/api-sec",
   },
   {
     img: Img,
     name: "Wireless Penetration Testing",
     review:
       "Assess the security of your wireless networks to identify weaknesses in encryption, authentication, and configuration settings.",
+    link: "/wire-pen-test",
   },
   {
     img: Img,
     name: "OT And IoT Penetration Testing",
     review:
       "Evaluate the security of operational technology and Internet of Things devices to ensure they are resilient against cyber attacks and breaches.",
+    link: "/ot-iot",
   },
   {
     img: Img,
     name: "Cloud Penetration Testing",
     review:
       "Examine the security of your cloud infrastructure to identify vulnerabilities and ensure compliance with industry best practices for cloud security.",
+    link: "/cloud-pen",
   },
 ];
 
