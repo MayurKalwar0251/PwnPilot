@@ -121,7 +121,7 @@ const ServicesCard = () => {
               {data.map((d) => (
                 <div
                   key={d.name}
-                  className="bg-white  text-black rounded-xl  h-[400px] "
+                  className="bg-white  text-black rounded-xl  h-[450px] sm:h-[400px] "
                 >
                   <div className="h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl">
                     <img
@@ -158,7 +158,7 @@ const ServicesCard = () => {
               {adv.map((d) => (
                 <div
                   key={d.name}
-                  className="bg-white  text-black rounded-xl  h-[400px] "
+                  className="bg-white  text-black rounded-xl  h-[450px] sm:h-[400px] "
                 >
                   <div className="h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl">
                     <img
@@ -169,10 +169,10 @@ const ServicesCard = () => {
                   </div>
 
                   <div className="flex flex-col items-center justify-center gap-4 p-4">
-                    <p className="text-base text-center font-semibold">
+                    <p className="text-base text-center font-semibold sm:leading-5">
                       {d.name}
                     </p>
-                    <p className="text-center text-sm">
+                    <p className="text-center text-sm lg:leading-6 sm:leading-3">
                       {truncateReview(d.review)}
                     </p>
                     <Link to={d.link}>
