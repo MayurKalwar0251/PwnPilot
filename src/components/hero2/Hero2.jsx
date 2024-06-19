@@ -2,6 +2,7 @@ import React from "react";
 import Video from "../../assets/1.mp4";
 import "./hero2.css";
 import MyCustomButton from "../button/CommonButton";
+import { Link } from "react-router-dom";
 
 const Hero2 = () => {
   return (
@@ -27,12 +28,14 @@ const Hero2 = () => {
           <br /> cybersecurity planning.
         </div>
 
-        <MyCustomButton
-          name={"Read More"}
-          backgroundColor="var(--primary-color)"
-          color="white"
-          onClicked={() => {}}
-        />
+        <Link to={"/services"}>
+          <MyCustomButton
+            name={"Read More"}
+            backgroundColor="var(--primary-color)"
+            color="white"
+            onClicked={() => {}}
+          />
+        </Link>
       </div>
     </div>
   );

@@ -209,7 +209,7 @@ const NavbarContact = () => {
                                 <li>API Security Testing</li>
                               </Link>
                               <Link to={"/wire-pen-test"}>
-                                <li>Wifiless Penetration Testing</li>
+                                <li>Wireless Penetration Testing</li>
                               </Link>
                               <Link to={"/ot-iot"}>
                                 <li>OT And IOT Penetration Testing</li>
@@ -271,19 +271,19 @@ const NavbarContact = () => {
                         <Link to={"/bfsi"}>
                           <li>BFSI</li>
                         </Link>
-                        <Link to={"/manu"}>
+                        <Link to={"/manufacturing"}>
                           <li>Manufacturing</li>
                         </Link>
-                        <Link to={"/pharma"}>
+                        <Link to={"/pharmaceutical"}>
                           <li>Pharmaceutical</li>
                         </Link>
-                        <Link to={"/tech"}>
+                        <Link to={"/technology"}>
                           <li>Technology</li>
                         </Link>
-                        <Link to={"/gov"}>
+                        <Link to={"/government"}>
                           <li>Government</li>
                         </Link>
-                        <Link to={"/edu"}>
+                        <Link to={"/education"}>
                           <li>Education</li>
                         </Link>
                       </ul>

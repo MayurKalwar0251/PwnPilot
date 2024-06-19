@@ -85,11 +85,11 @@ function App() {
           <Route path="/dig-foren" element={<DigForen />} />
 
           <Route path="/bfsi" element={<BFSI />} />
-          <Route path="/edu" element={<Edu />} />
-          <Route path="/gov" element={<Gov />} />
-          <Route path="/manu" element={<Manu />} />
-          <Route path="/pharma" element={<Pharmaceutical />} />
-          <Route path="/tech" element={<Tech />} />
+          <Route path="/education" element={<Edu />} />
+          <Route path="/government" element={<Gov />} />
+          <Route path="/manufacturing" element={<Manu />} />
+          <Route path="/pharmaceutical" element={<Pharmaceutical />} />
+          <Route path="/technology" element={<Tech />} />
 
           <Route path="/about" element={<About />} />
           <Route path="/career" element={<Career />} />

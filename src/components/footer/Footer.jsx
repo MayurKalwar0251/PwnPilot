@@ -101,19 +101,19 @@ const Footer = () => {
                 <Link to={"/bfsi"}>
                   <li>BFSI</li>
                 </Link>
-                <Link to={"/manu"}>
+                <Link to={"/manufacturing"}>
                   <li>Manufacturing</li>
                 </Link>
-                <Link to={"/pharma"}>
+                <Link to={"/pharmaceutical"}>
                   <li>Pharmaceutical</li>
                 </Link>
-                <Link to={"/tech"}>
+                <Link to={"/technology"}>
                   <li>Technology</li>
                 </Link>
-                <Link to={"/gov"}>
+                <Link to={"/government"}>
                   <li>Government</li>
                 </Link>
-                <Link to={"/edu"}>
+                <Link to={"/education"}>
                   <li>Education</li>
                 </Link>
               </ul>
@@ -135,7 +135,7 @@ const Footer = () => {
             <div className="footer-section-lower" data-aos="fade-up">
               <h3>Call Us Toll Free:</h3>
               <p>For Sales: +91 90158 11818 </p>
-              <p>For Enquiry: +91 73982 43449 </p>
+              <p>For Enquiry: +91 63897 70755 </p>
             </div>
             <div className="footer-section-lower" data-aos="fade-up">
               <h3>Email Us:</h3>
@@ -152,10 +152,12 @@ const Footer = () => {
           <p className="company-name">PwnPilot Security </p>
         </div>
 
-        <div className="bottom-right">
-          Made by CodersFortify Techno
-          <img src={Coders} className="coders-logo" alt="Logo" />
-        </div>
+        <Link to={"http://www.codersortify.tech"} target="_blank">
+          <div className="bottom-right">
+            Made by CodersFortify Technologies
+            <img src={Coders} className="coders-logo" alt="Logo" />
+          </div>
+        </Link>
       </div>
     </footer>
   );

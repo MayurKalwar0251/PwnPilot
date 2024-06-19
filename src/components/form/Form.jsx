@@ -8,7 +8,7 @@ const Form = ({ title }) => {
   const [dropdown2Open, setDropdown2Open] = useState(false);
   return (
     <div className="f-container">
-      <video className="video" src={Video}></video>
+      <video className="video" muted autoPlay loop src={Video}></video>
       <div className="form-form-right">
         <div className="form">
           <div className="form-title">{title}</div>

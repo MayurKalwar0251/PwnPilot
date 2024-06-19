@@ -6,10 +6,19 @@ import Img from "../../assets/blue-team.png";
 import { Link } from "react-router-dom";
 import RedTeam from "../../assets/red-team.png";
 import BlueTeam from "../../assets/blue-team.png";
+import Net from "../../assets/net.png";
+import Web from "../../assets/WebAppSec.png";
+import Mob from "../../assets/MobApp.png";
+import Api from "../../assets/ApiSec.png";
+import Wire from "../../assets/WirePen.png";
+import OtIot from "../../assets/Otiot.png";
+import Cloud from "../../assets/CloudPen.png";
 
 const ServicesCard = () => {
   const settings = {
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -38,6 +47,8 @@ const ServicesCard = () => {
   const settingsAdv = {
     dots: adv.length > 2,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -183,48 +194,48 @@ const ServicesCard = () => {
 const data = [
   {
     name: "Network Penetration Testing",
-    img: Img,
+    img: Net,
     link: "/net-pen-test",
     review:
       "Identify and mitigate vulnerabilities within your network infrastructure to defend against potential cyber threats and unauthorized access.",
   },
   {
     name: "Web Application Security Testing",
-    img: Img,
+    img: Web,
     review:
       "Uncover and fix security flaws in web applications to protect against attacks like SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).",
     link: "/web-app-sec",
   },
   {
-    img: Img,
+    img: Mob,
     name: "Mobile Application Penetration Testing",
     review:
       "Evaluate the security of mobile applications on various platforms to ensure data integrity, privacy, and protection against unauthorized access.",
     link: "/mob-app-pen",
   },
   {
-    img: Img,
+    img: Api,
     name: "API Security Testing",
     review:
       "Ensure your APIs are secure by identifying vulnerabilities that could expose sensitive data or allow unauthorized operations.",
     link: "/api-sec",
   },
   {
-    img: Img,
+    img: Wire,
     name: "Wireless Penetration Testing",
     review:
       "Assess the security of your wireless networks to identify weaknesses in encryption, authentication, and configuration settings.",
     link: "/wire-pen-test",
   },
   {
-    img: Img,
+    img: OtIot,
     name: "OT And IoT Penetration Testing",
     review:
       "Evaluate the security of operational technology and Internet of Things devices to ensure they are resilient against cyber attacks and breaches.",
     link: "/ot-iot",
   },
   {
-    img: Img,
+    img: Cloud,
     name: "Cloud Penetration Testing",
     review:
       "Examine the security of your cloud infrastructure to identify vulnerabilities and ensure compliance with industry best practices for cloud security.",
