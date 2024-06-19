@@ -15,7 +15,6 @@ const Leadership = () => {
           { name: "Leadership", path: "#" },
         ]}
       />
-      <LeadershipTeam />
  
     </div>
   );

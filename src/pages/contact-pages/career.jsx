@@ -14,7 +14,6 @@ const Career = () => {
           { name: "Cyber Security Careers", path: "#" },
         ]}
       />
-      <LeadershipTeam />
  
     </div>
   );

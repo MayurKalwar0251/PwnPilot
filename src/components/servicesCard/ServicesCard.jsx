@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Img from "../../assets/blue-team.png";
 import { Link } from "react-router-dom";
+import RedTeam from "../../assets/red-team.png";
+import BlueTeam from "../../assets/blue-team.png";
 
 const ServicesCard = () => {
   const settings = {
@@ -13,6 +15,33 @@ const ServicesCard = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    rows: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+    ],
+  };
+  const settingsAdv = {
+    dots: adv.length > 2,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: adv.length > 2 ? <SampleNextArrow /> : null,
     prevArrow: <SamplePrevArrow />,
     rows: 1,
     responsive: [
@@ -58,7 +87,6 @@ const ServicesCard = () => {
           ...style,
           display: "block",
           background: "black",
-          fontSize: "40px",
         }}
         onClick={onClick}
       ></div>
@@ -67,39 +95,85 @@ const ServicesCard = () => {
 
   const truncateReview = (review) => {
     const words = review.split(" ");
-    return words.length > 20 ? words.slice(0, 20).join(" ") + "..." : review;
+    return words.length > 15 ? words.slice(0, 15).join(" ") + "..." : review;
   };
 
   return (
-    <div className="bg-[#14161b] pb-20">
-      <div className="w-3/4 m-auto py-20">
-        <div className="mt-20">
-          <Slider {...settings}>
-            {data.map((d) => (
-              <div
-                key={d.name}
-                className="bg-white h-auto text-black rounded-xl"
-              >
-                <div className="h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl">
-                  <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
-                </div>
+    <div className="bg-[#14161b] pb-20 ">
+      <div className="px-10 m-auto py-20 flex flex-col gap-10">
+        <div>
+          <h1 className="text-white text-center text-2xl ">
+            Vulnerability Assessment & Penetration Testing
+          </h1>
+          <div className="mt-20 bg-300">
+            <Slider {...settings}>
+              {data.map((d) => (
+                <div
+                  key={d.name}
+                  className="bg-white  text-black rounded-xl  h-[400px] "
+                >
+                  <div className="h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl">
+                    <img
+                      src={d.img}
+                      alt=""
+                      className="h-44 w-44 rounded-full"
+                    />
+                  </div>
 
-                <div className="flex flex-col items-center justify-center gap-4 p-4">
-                  <p className="text-base text-center font-semibold">
-                    {d.name}
-                  </p>
-                  <p className="text-center text-sm">
-                    {truncateReview(d.review)}
-                  </p>
-                  <Link to={d.link}>
-                    <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">
-                      Read More
-                    </button>
-                  </Link>
+                  <div className="flex flex-col items-center justify-center gap-4 p-4">
+                    <p className="text-base text-center font-semibold">
+                      {d.name}
+                    </p>
+                    <p className="text-center text-sm">
+                      {truncateReview(d.review)}
+                    </p>
+                    <Link to={d.link}>
+                      <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">
+                        Read More
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
+        </div>
+        <div>
+          <h1 className="text-white text-center text-2xl ">
+            Advanced Services
+          </h1>
+          <div className="mt-20 bg-300">
+            <Slider {...settingsAdv}>
+              {adv.map((d) => (
+                <div
+                  key={d.name}
+                  className="bg-white  text-black rounded-xl  h-[400px] "
+                >
+                  <div className="h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl">
+                    <img
+                      src={d.img}
+                      alt=""
+                      className="h-44 w-44 rounded-full"
+                    />
+                  </div>
+
+                  <div className="flex flex-col items-center justify-center gap-4 p-4">
+                    <p className="text-base text-center font-semibold">
+                      {d.name}
+                    </p>
+                    <p className="text-center text-sm">
+                      {truncateReview(d.review)}
+                    </p>
+                    <Link to={d.link}>
+                      <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">
+                        Read More
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>
@@ -155,6 +229,23 @@ const data = [
     review:
       "Examine the security of your cloud infrastructure to identify vulnerabilities and ensure compliance with industry best practices for cloud security.",
     link: "/cloud-pen",
+  },
+];
+
+const adv = [
+  {
+    name: "Red Teaming",
+    img: RedTeam,
+    link: "/red-team",
+    review:
+      "Integration of security practices within DevOps workflows, ensuring continuous security testing and compliance throughout the software development lifecycle.",
+  },
+  {
+    name: "Blue Teaming",
+    img: BlueTeam,
+    review:
+      "Starts their defensive plan by identifying the critical assets, document the importance of these assets to the business and what impact the absence of these assets will have.",
+    link: "/blue-team",
   },
 ];
 

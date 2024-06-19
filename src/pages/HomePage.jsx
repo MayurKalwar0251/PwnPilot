@@ -14,11 +14,12 @@ import LeadershipTeam from "../components/leadership team/LeadershipTeam";
 import EvolutionOfCyber from "../components/evolution of cyber/EvolutionOfCyber";
 import ServicesCard from "../components/servicesCard/ServicesCard";
 import Form from "../components/form/Form";
+import Hero2 from "../components/hero2/Hero2";
 
 const HomePage = () => {
   return (
     <div data-aos="fade-up">
-      <Hero />
+      <Hero2 />
       <ServicesCard />
       <Assesments />
       <CyberSecuritySImplify />
@@ -27,7 +28,6 @@ const HomePage = () => {
       <SolutionOffer />
       <CyberDetail4 />
       <WhoWeServe />
-      <LeadershipTeam />
       <EvolutionOfCyber />
     </div>
   );

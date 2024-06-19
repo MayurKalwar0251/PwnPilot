@@ -16,7 +16,6 @@ const About = () => {
         ]}
       />
       <CyberSecuritySImplify />
-      <LeadershipTeam />
  
     </div>
   );

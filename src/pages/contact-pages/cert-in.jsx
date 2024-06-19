@@ -17,7 +17,6 @@ const CertIn = () => {
         ]}
       />
       <CyberSecuritySImplify />
-      <LeadershipTeam />
  
     </div>
   );

@@ -15,7 +15,6 @@ const Key25 = () => {
           { name: "Key2Sec - The Infosec Knowledge Hub", path: "#" },
         ]}
       />
-      <LeadershipTeam />
  
     </div>
   );

@@ -149,7 +149,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="bottom-left">
           <p>© 2024 | All Rights Reserved by</p>
-          <p className="company-name">PwnPilot Security Private Limited</p>
+          <p className="company-name">PwnPilot Security </p>
         </div>
 
         <div className="bottom-right">
