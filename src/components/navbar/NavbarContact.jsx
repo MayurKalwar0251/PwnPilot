@@ -134,7 +134,7 @@ const NavbarContact = () => {
               <li>
                 <IoIosCall className="contact-icon" />
                 <p>For Enquiry</p>
-                <p>+91 7398243449</p>
+                <p>+91 6389770755</p>
               </li>
               <li>
                 <AiOutlineMail className="contact-icon" />
