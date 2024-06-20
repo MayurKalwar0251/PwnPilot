@@ -112,6 +112,9 @@ const ServicesCard = () => {
   return (
     <div className="bg-[#14161b] pb-20 ">
       <div className="px-10 m-auto py-20 flex flex-col gap-10">
+        <h1 className="text-[var(--secondary-color)] text-center text-3xl ">
+          Our Leading Best Services
+        </h1>
         <div>
           <h1 className="text-white text-center text-2xl ">
             Vulnerability Assessment & Penetration Testing
